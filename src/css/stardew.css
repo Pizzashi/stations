@@ -1,0 +1,437 @@
+/* Written by John Billy James Cale aka Baconfry */
+/* Stardew Valley stylesheet */
+@keyframes logo {
+	0% {padding-right: 1vw;}
+	12.5% {padding-bottom: 1vw;}
+	25% {padding-bottom: 1vw;} 
+	37.5% {padding-left: 1vw;}
+	50% {padding-left: 1vw;}
+	62.5% {padding-top: 1vw;}
+	75% {padding-top: 1vw;}
+	87.5% {padding-right: 1vw}
+	100% {padding: 0;}
+}
+@-webkit-@keyframes logo {
+	0% {padding-right: 1vw;}
+	12.5% {padding-bottom: 1vw;}
+	25% {padding-bottom: 1vw;} 
+	37.5% {padding-left: 1vw;}
+	50% {padding-left: 1vw;}
+	62.5% {padding-top: 1vw;}
+	75% {padding-top: 1vw;}
+	87.5% {padding-right: 1vw}
+	100% {padding: 0;}
+}
+@-ms-@keyframes logo {
+	0% {padding-right: 1vw;}
+	12.5% {padding-bottom: 1vw;}
+	25% {padding-bottom: 1vw;} 
+	37.5% {padding-left: 1vw;}
+	50% {padding-left: 1vw;}
+	62.5% {padding-top: 1vw;}
+	75% {padding-top: 1vw;}
+	87.5% {padding-right: 1vw}
+	100% {padding: 0;}
+}
+@-moz-@keyframes logo {
+	0% {padding-right: 1vw;}
+	12.5% {padding-bottom: 1vw;}
+	25% {padding-bottom: 1vw;} 
+	37.5% {padding-left: 1vw;}
+	50% {padding-left: 1vw;}
+	62.5% {padding-top: 1vw;}
+	75% {padding-top: 1vw;}
+	87.5% {padding-right: 1vw}
+	100% {padding: 0;}
+}
+.logobg {
+	display: block;
+	position: relative;
+	position: absolute;
+	z-index: -9999;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.logo {
+	animation: logo 5s infinite;
+	-webkit-animation: logo 5s infinite;
+	-ms-animation: logo 5s infinite;
+	-moz-animation: logo 5s infinite;
+	position: absolute;
+	top: 20vh ;
+	left: 25vw;
+	width: 50vw;
+	z-index: -9998;
+}
+.lot {
+	display: block;
+	position: absolute;
+	z-index: -9998;
+	top: 94%;
+	left: 0;
+	width: 100vw;
+	border-bottom: 2vh solid #fbed9f;
+}
+html {
+	overflow-x: hidden;
+	background-color: #fbed9f;
+}
+.cover {
+	z-index: 1;
+	display: block;
+	background: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 150vh;
+}
+.contentdesu {
+	position: absolute;
+	top: 150vh;
+	display: block;
+	background-color: #fbed9f;
+}
+.contentcontent {
+	display: block;
+	background-color: #fbed9f;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	width: 80vw;
+}
+.title {
+	color: #0066cc;
+	font-family: Verdana;
+	text-align: center;
+	padding-top: 5vh;
+	font-size: 3em;
+	font-weight: 300;
+}
+.title2 {
+	font-family: Arial;
+	color: black;
+	font-weight: 100;
+	text-align: center;
+	line-height: 1.5;
+}
+.hilight {
+	color: orange;
+	font-weight: bold;
+}
+#orng {
+    color: #ff6633;
+    font-weight: 700;
+    text-align: center;
+    font-family: Verdana;
+}
+li {
+    display: list-item;
+    line-height: 1.5;
+}
+ul {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+#trayler {
+	background-color: white;
+	border: 1px gray solid;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 60%;
+	border-radius: 10px;
+}
+#mainpage_logos td {
+    width:17%;
+    padding:25px;
+}
+
+#switch_logo, #gog_logo {
+    width:100px;
+}
+
+#xbox_logo, #humble_logo, #steam_logo {
+    padding:5px !important;
+}
+
+#mainpage_logos img {
+    max-width:100%;
+}
+#tab {
+  display: block;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+.info {
+  	display: block;
+	width: 10vw;
+	border-radius: 5px;
+	border: 5px solid orange;
+	background-color: orange;
+	position: absolute;
+	left: 48vh;
+	top: -0.5vh;
+	vertical-align: center;
+}
+.bts {
+  	display: block;
+	width: 15vw;
+	border-radius: 5px;
+	border: 5px solid orange;
+	background-color: orange;
+	position: absolute;
+	left: 10vh;
+	top: -0.5vh;
+	vertical-align: center;	
+}
+.bts:hover {
+	border: 5px solid white;
+	background-color: white;
+	color: black;
+}
+.bts:hover #bluck {
+	color: orange;	
+}
+.info:hover {
+	border: 5px solid white;
+	background-color: white;
+	color: orange;
+}
+.info:hover #bluck2 {
+	color: orange;
+}
+ #bluck {
+ 	font-size: 3vh;
+ 	color: white;
+ 	font-family: Helvetica;
+ }
+ #bluck2 {
+ 	font-size: 3vh;
+ 	color: white;
+ 	font-family: Helvetica;
+ }
+ #bluck3 {
+ 	font-size: 3vh;
+ 	color: white;
+ 	font-family: Helvetica;
+ } 
+ .authorinfo:hover #bluck3 {
+ 	color: black;
+ }
+ .info-background {
+  display: none;
+}
+.info-background:target {
+  -webkit-animation-name: ahri;
+  animation-name: ahri;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  display: table;
+  position: fixed;
+  z-index: 10;
+  overflow: visible;
+  background-color: white; 
+  width: 30vw;
+  height: 65vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 5vw;
+  margin-top: 0;
+  border-radius: 1vw;
+}
+.info-fix {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 4vh;
+  margin-right: 4vh;
+  line-height: 1.5;
+}
+.music {
+    display: block;
+    align-content: center;
+    background-color: #f3f3f3;
+    width: 26vw;
+    overflow: auto;
+    color: white;
+    font-color: white;
+    align-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.music-button {
+    width: 26vw;
+    background: #f3f3f3;
+    margin: auto;
+    padding: 12px 16px;
+    display: block;
+    font-family: Helvetica;
+    border: 0.001px solid black;
+    text-align: center; 
+}
+.music-button:hover {
+  background:rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+.closeStation {
+  font-family: "Helvetica";
+  text-decoration: none;
+  float: right;
+  padding-right: 1vw;
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  margin-top: 0px;
+  padding-top: 2px;
+}
+
+.closeStation:hover,
+.closeStation:focus {
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  position: relative;
+  left: 1px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+@keyframes popupdesu{
+  0% {transform: scale(1.1);}
+  50% {transform: scale(1.2);}
+  100% {transform: scale(1.3);}
+}
+@-webkit-keyframes popupdesu{
+  0% {transform: scale(1.1);}
+  50% {transform: scale(1.2);}
+  100% {transform: scale(1.3);}
+}
+@-moz-keyframes popupdesu{
+  0% {transform: scale(1.1);}
+  50% {transform: scale(1.2);}
+  100% {transform: scale(1.3);}
+}
+.music-button:hover img {
+  animation: popupdesu 0.3s;
+  -webkit-animation: popupdesu 0.3s;
+  -moz-animation: popup 0.3s;
+}
+.null {
+	display: none;
+}
+.null2 {
+	display: none;
+}
+.rainbow {
+    font-weight: bold;
+    -webkit-animation: rainbow 1.2s infinite;
+    animation: rainbow 1.2s infinite;
+}
+@-webkit-keyframes rainbow {
+    0% {
+    color: orange
+    }
+    20% {
+    color: red
+    }
+    40% {
+    color: yellow
+    }
+    60% {
+    color: green
+    }
+    80% {
+    color: blue
+    }
+    100% {
+    color: orange
+    }
+}    
+@keyframes rainbow {
+	0% {
+	color: orange
+	}
+	20% {
+	color: red
+	}
+	40% {
+	color: yellow
+	}
+	60% {
+	color: green
+	}
+	80% {
+	color: blue
+	}
+	100% {
+	color: orange
+    }
+}
+/* About the Author (and Contributors!), Shared across the sites */
+.about-background {
+  display: none;
+}
+.about-background:target {
+  -webkit-animation-name: ahri;
+  animation-name: ahri;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  display: table;
+  position: fixed;
+  z-index: 10;
+  overflow: visible;
+  background-color: white; 
+  width: 50vw;
+  height: 88vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 45vw;
+  margin-top: 2vh;
+  border-radius: 1vw;
+}
+.about-fix {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 4vh;
+  margin-right: 4vh;
+  line-height: 1.5;
+}
+.lala {
+  float: left;
+  width: 10vw;
+  margin-right: 1.5vw;
+  border-radius: 100%;
+  border: 1px gray solid;
+}
+#tab {
+  display: block;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+.authorinfo {
+  display: block;
+	width: 10vw;
+	border-radius: 5px;
+	border: 5px solid orange;
+	background-color: orange;
+	position: absolute;
+	right: 10vh;
+	top: -0.5vh;
+	vertical-align: center;
+}
+.authorinfo:hover {
+	background: white;
+	border-color: white;
+	color: orange;
+}
+@-webkit-keyframes ahri {
+  from {opacity: 0;}
+  to {opacity: 1; }
+}
+@keyframes ahri {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

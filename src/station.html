@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!--
+// Created by Baconfry, resources were gathered throughout the web.
+// This project was made specially for the "Christmas Project" (2nd Grading Examination).
+-->
+
+<title>Main Station</title>
+<link rel="shortcut icon" href="pixel-train-icon.png">
+<link rel="icon" href="pixel-train-icon.png">
+<audio id="bgmusicwinter" autoplay="true" loop>
+<source src="music/winter.mp3">
+</audio>
+<audio id="bgmusicfuture" loop>
+<source src="music/future.mp3">
+</audio>
+
+<link rel="stylesheet" href="css/station.css">
+<img src="winter.gif" style="position: fixed; top: 0px; left: 0px; width: 100%; z-index: -9999" id="background-gif" >
+<body bgcolor="#040319">
+<div class="changeTHM" id="changeTHM">
+	<div class="stevenrooster"><br><br><br><br><br><br><br><br><br>
+		<h3 style="text-align: center;">Changing the theme, please wait for a moment.<br></h3>
+		<h4 style="text-align: center;"><i>Please note that if the chosen theme is active this function will still override it.</i></h4>
+		<br>
+		<br>
+		<img src="random/(6).gif" class="runningmanchallenge"> 
+	</div>
+</div>
+
+<a href="#tooltipdesu"><div class="info" id="tab">
+<center>
+<span style="font-size: 3vh; color: white; font-family: Helvetica;">Info</span>
+</center>
+</div></a>
+<a href="#Station"><div type="button" onclick="removeEmph()"><div class="emphasis" id="starters" id="tab">
+<center>
+<span style="font-size: 3vh; color: white; font-family: Helvetica;">Station</span>
+</center>
+</div></div></a>
+<div type="button" onclick="travelPop()">
+<div class="travel" id="tab">
+<span style="font-size: 3vh; color: white; font-family: Helvetica; position: relative; top: 0px; z-index: -1;">Travel</span>
+</div>
+
+<a href="#Baconfry-sama"><div class="authorinfo" id="tab">
+<center>
+<span style="font-size: 3vh; color: white; font-family: Helvetica;">About</span>
+</center>
+</div></a>
+
+<div id="Station" class="popuppage">
+<img src="ahri.gif" id="ahri" style="position: fixed; float: left; margin-top: 75vh; margin-bottom: 2vh; height: 25vh; cursor: help; z-index: 999; -webkit-animation-name: ahri; -webkit-animation-duration: 0.5s; animation-name: ahri; animation-duration: 0.5s;" title="You are currently on the Main Station!">
+  <div class="popup-dialog">
+    	<div class="popup-content">
+        	<a href="#" class="closeStation">×</a>
+			<div class="station-FIX">
+       		 <h1><font face="Arial">Welcome to the Main Station!</font></h1>
+        <div style="font-family: Helvetica; size: 3">
+        	<ul>
+       			<p><li style="line-height: 1.5;">First thing's first. To mute the background music, change the theme (for Main Station only), or see the current "place" where you currently are, click <font color="darkblue"><b>Info</b></font>.</li></p>
+       			<p><li>To travel to other "places", click <font color="darkblue"><b>Travel</b></font>.</li></p>
+       			<p><li>In the other pages, the <font color="darkblue"><b>Travel</b></font> and <font color="darkblue"><b>Station</b></font> tabs are replaced with
+       			<font color="darkblue"><b>Back to Main Station</b></font> tab.</li></p>
+      			<p><li>Lastly, I would appreciate it if you would visit the <font color="darkblue"><b>About</b></font> tab, the author's details and other nifty
+      			stuff can be found there.</li></p>
+    		</ul>
+        <br>
+        <br>
+       		<div style="text-align: justify; line-height: 1.5;">
+        	<img src="yoshi-train.gif" style="float: left;"><h2>What is this place?</h2>
+        	Think of it as a <b>"home tab"</b>. While on this page, you can browse other "places" like the <span class="rainbow">Anime</span> and <span class="rainbow">Stardew Valley</span> pages. 
+       	 	</div>
+        <br>
+        <h3>What does the <span class="rainbow">Main Station</span> do?</h3>
+        <img src="choochoo.gif" style="float: right; width: 30vw; margin-left: 2vw; border: 1px solid black" id="mainbanner">
+        <p style="line-height: 1.5;">The Main Station's ultimate purpose is to link the user to other places. 
+        It also acts as a help guide to the other webpages.</p>
+        <p>You can also find <span class="dr">random pictures</span> and <span class="dr">GIFs</span> in the <span class="flashing"><b>litter box</b></span>. (At the bottom of this page)</p>
+        <p style="line-height: 1.5;">And because of legal matters, I've added a copyright section in the <font color="darkblue"><b>About</b></font> tab. Feel free to visit there and shower the original contributors some praise!</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 align="center" class="dr">Here are the Substations!</h1>    
+		<br>
+        <h2>Stardew Valley</h2>
+        <img src="stardew-logo.jpg" id="border-shadow" style="float: right; width: 35vw; margin-left: 2vw;">
+        <p style="line-height: 1.5;">You're moving to the Valley... You've inherited your grandfather's old farm plot in <span class="rainbow">Stardew Valley</span>. Armed with hand-me-down tools and a few coins, you set out to begin your new life!</p>
+        <p style="line-height: 1.5;">With the light atmosphere, relaxing soundtrack, and amazing mechanics, this game is certainly one of the bests in my list!</p>
+        <br>
+        <br>
+        <p style="line-height: 1.5;">This game features:</p>
+        <span style="line-height: 1.5">
+       		 <ul> <!-- Ang &amp; symbol kay "&" na siya sa .html output -->
+        		<li><span id="orng">Build the farm of your dreams:</span> Turn your overgrown fields into a lively and bountiful farm!</li>
+				<li><span id="orng">Express yourself:</span> There are hundreds of character &amp; home customization options to choose from!</li>
+				<li><span id="orng">Master your ranching skills:</span> Raise animals, go fishing, tend to crops &amp; craft useful machines for your farm!</li>
+				<li><span id="orng">Become a part of the local community:</span> Pelican Town is home to 30 residents you can get to know!</li>
+				<li><span id="orng">Meet someone special:</span> With 12 townsfolk to date, you may even find someone to start a family with!</li>
+				<li><span id="orng">Explore vast, mysterious caves:</span> Encounter dangerous monsters &amp; valuable treasures deep underground!</li>
+			</ul>
+			<p>Hit <font color="darkblue"><b>Travel</b></font> and click Stardew Valley to browse this station!</p>
+		</span>
+		<br>
+		<br>
+		<h3>The <span class="rainbow">Anime</span> Station!</h3>
+		<br>
+		<img src="adagaki.png" id="border-shadow" style="float: left; width: 22vw; margin-right: 1vw; border: 1px solid gray; border-radius: 15px">
+		<p style="line-height: 1.5;">My favorite station, this station includes anime recommendations, some lit <span id="EGOIST">EGOIST</span> music, and...pictures and GIFs of <b>cute anime girls</b>! I mean, what <i>more</i> could you ask for?</p>
+		<p style="line-height: 1.5;">According to <i>Wikipedia</i>, anime is a Japanese term for hand-drawn or computer animation. The word is the abbreviated pronunciation of "animation" in Japanese, where this term references all animation. Outside Japan, anime is used to refer specifically to animation from Japan or as a Japanese-disseminated animation style often characterized by colorful graphics, vibrant charac- <span class="flashing">OH DARN IT, ANIME IS LOVE, THAT'S ALL YOU NEED TO KNOW.</span></p>
+		<p style="padding-left: 23vw">Hit <span class="db"><b>Travel</b></span> and click Anime to browse this station!</p>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<i>*The train will only depart when you are ready (by clicking <span class="db"><b>Travel > <i>Your desired destination</i></b></span>), so there's no need to rush. Take your time scouring through the <span class="flashing">litter box</span>!*</i>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<center>
+			<h1 class="rainbow">The Litter Box</h1>
+			<p><i><b>Important:</b> pictures on the litter box are adjusted to fit. To view their original width × height ratio, hover over them.</i></p>
+			<!-- The pictures on the litter box maybe used personally, credits to the awesome posters at Pinterest -->
+		<div style="overflow: visible;">
+		<img src="random/(1).gif" class="litterbox">
+		<img src="random/(1).jpg" class="litterbox">
+		<img src="random/(1).png" class="litterbox">
+		<img src="random/(2).gif" class="litterbox">
+		<img src="random/(2).jpg" class="litterbox">
+		<img src="random/(3).gif" class="litterbox">
+		<img src="random/(3).jpg" class="litterbox">
+		<img src="random/(3).png" class="litterbox">
+		<img src="random/(4).gif" class="litterbox">
+		<img src="random/(5).gif" class="litterbox">
+		<img src="random/(6).gif" class="litterbox">
+		<img src="random/(6).jpg" class="litterbox">
+		<img src="random/(7).gif" class="litterbox">
+		<img src="random/(7).jpg" class="litterbox">
+		<img src="random/(8).gif" class="litterbox">
+		<img src="random/(8).jpg" class="litterbox">
+		<img src="random/(9).gif" class="litterbox">
+		<img src="random/(9).jpg" class="litterbox">
+		<img src="random/(10).jpg" class="litterbox">
+		<img src="random/(12).jpg" class="litterbox">
+		<img src="random/(13).jpg" class="litterbox">
+		<img src="random/(14).jpg" class="litterbox">
+		<img src="random/(16).jpg" class="litterbox">
+		<img src="random/(19).jpg" class="litterbox">
+		<img src="random/(20).jpg" class="litterbox">
+		<img src="random/(21).jpg" class="litterbox">
+		<img src="random/(22).jpg" class="litterbox">
+		<img src="random/(23).jpg" class="litterbox">
+		<img src="random/(24).jpg" class="litterbox">
+		<img src="random/(25).jpg" class="litterbox">
+		<img src="random/(26).jpg" class="litterbox">
+		<img src="random/(28).jpg" class="litterbox">
+		<img src="random/(29).jpg" class="litterbox">
+		<img src="random/(30).jpg" class="litterbox">
+		<img src="random/(31).jpg" class="litterbox">
+		<img src="random/(2).png" class="litterbox">
+		<img src="random/(4).jpg" class="litterbox">
+		<img src="random/(5).jpg" class="litterbox">
+		<img src="random/(11).jpg" class="litterbox">
+		<img src="random/(18).jpg" class="litterbox">
+		</div>
+		<br>
+		<i>Liked an image? To download it, right click the image and click "Save image as..."</i></center>
+    	</div>
+      </div>
+      <!-- Closing tags from the parent div -->
+    		</div>
+		</div>
+	</div>
+</div>
+
+<div class="info-background" id="tooltipdesu" style="font-family: Helvetica">
+	<div class="info-dialogue">
+		<a href="#" class="closeStation" style="padding-top: 0px;">×</a>
+		<br>
+		<div class="info-fix">
+		<img src="ahri.gif" title="*sweats* H-hi! I am Ahri-chan! N-n-nice to meet you!" style="float: left; width: 5vw; height: auto; margin-right: 1vw; cursor: help;">
+		<p>You are currently on the <span class="rainbow">Main Station!</span></p>
+		<div id="winterinfo" class="show"><i>Forecast:</i> a little bit <span class="cold">chilly</span>.</div>
+		<div id="futureinfo" class="hide"><i>Forecast:</i> a little bit <span class="flashing">futuristic</span>.</div>
+	<br><div style="font-size: 1"><div id="winterinfo1" class="show">
+		<i>"Enjoy your stay on the Main Station, but don't forget to bring a jacket or sweater, the station is freezing! For quality clothing, visit the nearest <b>Shirts and Pants™</b> kiosk!"</i> -  Ad from Shirts and Pants™</div><div id="futureinfo1" class="hide"><i>"Welcome to the start of 3018! Don't hesitate on contacting the nearest police station should you witness anything out of the ordinary. Stay safe and happy new year!"</i> - Notice from the <span class="rainbow">Police</span></div></div>
+	<br>
+	<span class="db"><b>Settings:</b></span> <i>Click your desired option!</i><br>
+		Mute or unmute the background music:<br>
+			<div class="music" id="music">
+			<div style="border-bottom: 1px solid black"><button class="music-button" id="mute" onclick="musicPause()">Mute&nbsp;<img src="muted.png" style="vertical-align: center;
+  height: 2vh;
+  width: 2vh;"></button></div>
+			<span class="show" id="winterinfo2"><button class="music-button" onclick="musicPlay()" id="unmute">Unmute&nbsp;<img src="unmuted.png"></button></span>
+			<span class="hide" id="futureinfo2"><button class="music-button" onclick="musicPlay1()" id="unmute">Unmute&nbsp;<img src="unmuted.png"></button></span>
+			</div><br>
+		Select a theme for the page:<br>
+			<div class="theme">
+			<div style="border-bottom: 1px solid black"><button class="music-button" onclick="imisswinter()" id="winter">Winter Theme&nbsp;<img src="snowflake.png"></button></div>
+			<button class="music-button" onclick="takemeto3017()" id="future">Futuristic Theme&nbsp;<img src="blaster.png"></button>
+ 			</div>
+		</div>
+	</div>
+</div>
+
+<div id="Travel" class="dropdown-content">
+	<a href="anime/anime-redir.html"><span id="EGOIST">Anime</span></a>
+	<a href="stardew/stardew-redir.html"><span id="orng">Stardew Valley</span></a>
+	<a href="#"><span class="db"><b>Stay Here</b></span></a>
+</div>
+
+<!-- This div is shared across the sites -->
+<div class="about-background" id="Baconfry-sama" style="font-family: Helvetica">
+	<div class="about-dialogue">
+		<a href="#" class="closeStation" style="padding-top: 0px;">×</a>
+		<br>
+		<div class="about-fix">
+		<h3><b>About the Author (and Contributors!)</b></h3>
+		<img src="lala.gif" title="Lala-chan from To Love-Ru!" class="lala"><b>The Author</b><font size="2" face="Trebuchet MS">
+			<li><b>Name:</b>  John Billy James Cale </li>
+			<li><b>Alias(es):</b> Baconfry; <b>h_a_c_k_e_r_m_a_n</b>; <i>the <span class="rainbow">awesome-est</span> guy alive</i></li>
+			<li><b>Age:</b> 7332 years...but my human age is 15 I guess</li>
+			<li><b>Location:</b>  Under the sea</li>
+			<li><b>Gender:</b>  Male, duh</li>
+			<li><b>Additional Information:</b> One of the five idiots</li>
+		</font><br><h4 style="text-align: center; font-size: 85%;">Here are the contributors of the resources...I couldn't have done all of this without them!</h4>
+			<span style="font-size: 80%;">
+		<li>The <span style="color: darkred; font-weight: bold;">Pinterest</span> community (Litter box pictures and GIFs) and <span style="color: royalblue; font-weight: bold">Google Images</span> (Other pictures and stuff)</li>
+		<li><span style="color: green; font-weight: bold;">W3Schools</span> (Dropdown code)</li>
+		<li><span style="color: orange; font-weight: bold;">Concerned Ape &amp; Chuckle Fish</span> (Stardew Valley)</li>
+		<li><span style="color: deeppink; font-weight: bold">EGOIST</span>, <span style="color: indigo; font-weight: bold">RADWIMPS</span>, <span style="color: lightsalmon; font-weight: bold;">Tokyo Karonkoron</span>, <span style="color: darkblue; font-weight: bold;">Ayaka Ohashi</span> and <span style="color: gold; font-weight: bold;"">Ai Kayano</span> (Anime music)
+		<li><span style="color: navy"><b>STEREO DIVE FOUNDATION</b></span> &amp; <span style="color: deeppink"><b>supercell</b></span> (Anime music)</li>
+		<li><b>Eric Matyas</b> (Background music on the Main Station)</li>
+		<li><b><i>Wikipedia</i></b> (Anime description)</li>
+		<li><span style="color: magenta; font-weight: bold;">Team Salvato</span> (Doki Doki Literature Club) and <span style="color: purple; font-weight: bold;">Porter Robinson &amp; Madeon</span> (Shelter)
+		<center><p><i>That's about it! The sites were made with <font color="fuchsia"><b>lots of love</b></font> and were tested (and worked beautifully!) on Google Chrome (v63.0.3239.84) and Opera (v49.0.2725.64). However... <b>Microsoft Edge</b>, <b>Internet Explorer</b>, <b>Safari</b>, and <b>Mozilla Firefox</b> are <b>NOT</b> advisable...there are problems with the ISO-8859-1 characters. Stick with Chrome or Opera instead :) - Baconfry</i></p></center>
+			</span>
+		</div>
+	</div>
+</div>
+	
+<noscript style="background-color:white; width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; z-index: 9999; font-size: 3; text-align: center; padding-top: 20%;">Please enable JavaScript, most of my sites' funtionalities depend on it. After you've enabled JavaScript, reload the page and it should now work. Cheers. - Baconfry</noscript>
+<script>
+	function takemeto3017() {
+		var backgroundMusic = document.getElementById("bgmusicwinter");
+		var bgmusic = document.getElementById("bgmusicfuture");
+		bgmusic.pause()
+		backgroundMusic.pause()
+		document.getElementById("changeTHM").classList.toggle("show");
+		document.getElementById("background-gif").src="future.gif";
+		document.getElementById("mainbanner").src="forward.gif";
+		document.getElementById("winterinfo").classList.remove("show");
+		document.getElementById("winterinfo").classList.add("hide");
+		document.getElementById("futureinfo").classList.remove("hide");
+		document.getElementById("winterinfo1").classList.remove("show");
+		document.getElementById("winterinfo1").classList.add("hide");
+		document.getElementById("futureinfo1").classList.remove("hide");		
+		document.getElementById("winterinfo2").classList.remove("show");
+		document.getElementById("winterinfo2").classList.add("hide");
+		document.getElementById("futureinfo2").classList.remove("hide");			
+		setTimeout(function(){
+		document.getElementById("changeTHM").classList.toggle("show");
+		bgmusic.load()
+		bgmusic.play()
+	},8000)
+
+	}
+	function imisswinter() {
+		var backgroundMusic = document.getElementById("bgmusicwinter");
+		var bgmusic = document.getElementById("bgmusicfuture");
+		bgmusic.pause()
+		backgroundMusic.pause()
+		document.getElementById("changeTHM").classList.toggle("show");
+		document.getElementById("background-gif").src="winter.gif";
+		document.getElementById("mainbanner").src="choochoo.gif";
+		document.getElementById("futureinfo").classList.add("hide");
+		document.getElementById("winterinfo").classList.remove("hide");
+		document.getElementById("winterinfo").classList.add("show");
+		document.getElementById("futureinfo1").classList.add("hide");
+		document.getElementById("winterinfo1").classList.remove("hide");
+		document.getElementById("winterinfo1").classList.add("show");
+		document.getElementById("futureinfo2").classList.add("hide");
+		document.getElementById("winterinfo2").classList.remove("hide");
+		document.getElementById("winterinfo2").classList.add("show");					
+		setTimeout(function(){
+		document.getElementById("changeTHM").classList.toggle("show");
+		backgroundMusic.load()
+		backgroundMusic.play()
+	},8000)
+	}
+	function removeEmph() {
+	var srt = document.getElementById("starters").classList;
+		if (srt.contains("emphasis"));
+		srt.remove("emphasis");
+		srt.add("remove-anim")
+	}
+	function stationFuture() {
+
+	}
+	function musicSound() {
+		document.getElementById("music").classList.toggle("show");
+	}
+	function musicPause() {
+		var backgroundMusic = document.getElementById("bgmusicwinter");
+		var bgmusic = document.getElementById("bgmusicfuture");
+		backgroundMusic.pause()
+		bgmusic.pause()
+	}
+	function musicPlay() {
+		var backgroundMusic = document.getElementById("bgmusicwinter");
+		backgroundMusic.play()
+	}
+	function musicPlay1() {
+		var bgmusic = document.getElementById("bgmusicfuture")
+		bgmusic.play()
+	}
+/* Thanks to w3schools for providing this dropdown script! Feel free to copy the code! */
+	function travelPop() {
+	    document.getElementById("Travel").classList.toggle("show");
+	}
+	window.onclick = function(event) {
+	if (!event.target.matches('.travel')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+   	var i;
+   	for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+}
+}
+</script>
+<!-- Author of this page and its related pages: John Billy James Cale. -->
+</html>

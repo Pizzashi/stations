@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Stardew Valley</title>
+
+<link rel="icon" href="icon.png">
+<link rel="shortcut icon" href="icon.png">
+<audio autoplay="true" loop id="bgmusic">
+	<source src="../music/stardew.mp3">
+</audio>
+<img src="logobg.png" class="logobg">
+<img src="logo.png" class="logo">
+<img src="lot.png" class="lot">
+<link rel="stylesheet" href="../css/stardew.css">
+
+<a href="backtostation.html" title="Go back to the station?">
+	<div class="bts" id="tab">
+		<center>
+			<span id="bluck">Back to Main Station</span>
+		</center>
+	</div>
+</a>
+<a href="#tooltipdesu">
+	<div class="info" id="tab">
+		<center>
+			<span id="bluck2">Info</span>
+		</center>
+	</div>
+</a>
+<a href="#Baconfry-sama">
+	<div class="authorinfo" id="tab">
+		<center>
+			<span id="bluck3">About</span>
+		</center>
+	</div>
+</a>
+
+
+
+<div class="contentdesu">
+	<div class="contentcontent">
+		<p class="title">You're moving to the Valley...</p>
+		<p class="title2">You've inherited your grandfather's old farm plot in <span class="hilight">Stardew Valley</span>.<br>Armed with hand-me-down tools and a few coins, you set out to begin your new life!</p><br><br>
+		<h1 style="color: #0066cc;
+		font-family: Verdana;
+		text-align: center;
+		font-weight: 700;">Do you want to...</h1>
+		<ul> <!-- Ang &amp; symbol kay "&" na siya sa .html output -->
+			<center><font face="Helvetica">
+			<li><span id="orng">Build the farm of your dreams?</span> Turn your overgrown fields into a lively and bountiful farm!</li>
+			<li><span id="orng">Express yourself?</span> There are hundreds of character &amp; home customization options to choose from!</li>
+			<li><span id="orng">Master your ranching skills?</span> You can raise animals, go fishing, tend to crops &amp; craft useful machines for your farm!</li>
+			<li><span id="orng">Become a part of the local community?</span> Pelican Town is home to 30 residents you can get to know!</li>
+			<li><span id="orng">Meet someone special?</span> With 12 townsfolk to date, you may even find someone to start a family with!</li>
+			<li><span id="orng">Explore vast, mysterious caves?</span> Explore the caves to encounter dangerous monsters &amp; find valuable treasures deep underground!</li>
+			</font></center><br>
+		</ul>
+		<br>
+		<br>
+		<center><h2 style="color: #0066cc; font-family: Verdana; text-align: center; font-weight: 350;">This is the official trailer of <span style="color: orange;">Stardew Valley</span></h2></center>
+		<center>
+		<video id="trayler" controls onplay="desu()" onpause="ka()" poster="poster.png">
+			<source src="trailer.mp4">
+		</video></center>
+		<br>
+		<br>
+		<div class="title" style="font-size: 170%;">And it doesn't end there! ConcernedApe is always adding new content to the game!</div>
+		<br>
+		<br>
+		<center><span class="title2">If you enjoyed the trailer, you'll definitely enjoy the actual game! The game is sold on Steam, GOG (DRM-free), and The Humble Store for PC. Moreover, the game also has a console version! (XBOX One, Nintendo Switch, and PS4!)<br></span><br>
+		<table id="mainpage_logos">
+		<tbody><tr>
+		<td id="steam_logo"><a href="http://store.steampowered.com/app/413150/Stardew_Valley/"><img src="steam.png" alt="Stardew Valley on Steam!" id="steam_logo"></a></td>
+		<td id="humble_logo"><a href="https://www.humblebundle.com/store/stardew-valley"><img src="hs.png" alt="Stardew Valley on the Humble Store!" id="humble_logo"></a></td>
+		<td><a href="https://www.gog.com/game/stardew_valley"><img src="gog.png" alt="Stardew Valley on GOG!" id="gog_logo"></a></td>
+		<td id="xbox_logo"><a href="https://www.microsoft.com/en-gb/store/p/stardew-valley/c3d891z6tnqm"><img src="xbox.png" alt="Stardew Valley on Xbox One!" id="xbox_logo"></a></td>
+		<td><a href="https://www.playstation.com/en-us/games/stardew-valley-ps4/"><img src="ps4.png" alt="Stardew Valley on PS4!" id="ps4_logo"></a></td>
+		<td><a href="https://www.nintendo.co.uk/Games/Nintendo-Switch-download-software/Stardew-Valley-1287587.html"><img src="ns.png" alt="Stardew Valley on Nintendo Switch!" id="switch_logo"></a></td></tr>
+		<tr><img src="ca.png"><img src="cf.png"></tr></tbody></table>
+	</div>
+</div>
+
+<div class="info-background" id="tooltipdesu" style="font-family: Helvetica">
+	<div class="info-dialogue">
+		<a href="#" class="closeStation" style="padding-top: 0px;">×</a>
+		<br>
+		<div class="info-fix">
+		<img src="caty.gif" title="Meeeoooooowwwww!" style="float: left; width: 5vw; height: auto; margin-right: 1vw; cursor: help;">
+		You are currently in <span class="hilight">Stardew Valley</span>!<br><br>
+		<i>Forecast:</i> a little bit <span class="hilight">sunny</span>.<br>
+		<br>
+		<p><i>"Because of certain events, our old friend's grandchild has inherited his grandfather's plot in Stardew Valley. Please make sure to act decent in front of him :P"</i> - Mayor Lewis</p>
+	
+	<br>
+	<span class="hilight"><b>Settings:</b></span> <i>Click your desired option!</i><br>
+		Mute or unmute the background music:<br>
+			<div class="music">
+			<div style="border-bottom: 1px solid black"><button class="music-button" onclick="musicPause()">Mute&nbsp;<img src="muted.png" style="vertical-align: center;
+  			height: 2vh;
+	  		width: 2vh;">
+			</button></div>
+			<button class="music-button" onclick="musicPlay()"">Unmute&nbsp;<img src="unmuted.png"></button>
+			</div><br>
+		</div>
+	</div>
+</div>
+<div id="musicTest" class="null"></div>
+
+<!-- This div is shared across the sites -->
+<div class="about-background" id="Baconfry-sama" style="font-family: Helvetica">
+	<div class="about-dialogue">
+		<a href="#" class="closeStation" style="padding-top: 0px;">×</a>
+		<br>
+		<div class="about-fix">
+		<h3><b>About the Author (and Contributors!)</b></h3>
+		<img src="lala.gif" title="Lala-chan from To Love-Ru!" class="lala"><b>The Author</b><font size="2" face="Trebuchet MS">
+			<li><b>Name:</b>  John Billy James Cale </li>
+			<li><b>Alias(es):</b> Baconfry; <b>h_a_c_k_e_r_m_a_n</b>; <i>the <span class="rainbow">awesome-est</span> guy alive</i></li>
+			<li><b>Age:</b> 7332 years...but my human age is 15 I guess</li>
+			<li><b>Location:</b>  Under the sea</li>
+			<li><b>Gender:</b>  Male, duh</li>
+			<li><b>Additional Information:</b> One of the five idiots</li>
+		</font><br><h4 style="text-align: center; font-size: 85%;">Here are the contributors of the resources...I couldn't have done all of this without them!</h4>
+			<span style="font-size: 80%;">
+		<li>The <span style="color: darkred; font-weight: bold;">Pinterest</span> community (Litter box pictures and GIFs) and <span style="color: royalblue; font-weight: bold">Google Images</span> (Other pictures and stuff)</li>
+		<li><span style="color: green; font-weight: bold;">W3Schools</span> (Dropdown code)</li>
+		<li><span style="color: orange; font-weight: bold;">Concerned Ape &amp; Chuckle Fish</span> (Stardew Valley)</li>
+		<li><span style="color: deeppink; font-weight: bold">EGOIST</span>, <span style="color: indigo; font-weight: bold">RADWIMPS</span>, <span style="color: lightsalmon; font-weight: bold;">Tokyo Karonkoron</span>, <span style="color: darkblue; font-weight: bold;">Ayaka Ohashi</span> and <span style="color: gold; font-weight: bold;"">Ai Kayano</span> (Anime music)
+		<li><span style="color: navy"><b>STEREO DIVE FOUNDATION</b></span> &amp; <span style="color: deeppink"><b>supercell</b></span> (Anime music)</li>
+		<li><b>Eric Matyas</b> (Background music on the Main Station)</li>
+		<li><b><i>Wikipedia</i></b> (Anime description)</li>
+		<li><span style="color: magenta; font-weight: bold;">Team Salvato</span> (Doki Doki Literature Club) and <span style="color: purple; font-weight: bold;">Porter Robinson &amp; Madeon</span> (Shelter)
+		<center><p><i>That's about it! The sites were made with <font color="fuchsia"><b>lots of love</b></font> and were tested (and worked beautifully!) on Google Chrome (v63.0.3239.84) and Opera (v49.0.2725.64). However... <b>Microsoft Edge</b>, <b>Internet Explorer</b>, <b>Safari</b>, and <b>Mozilla Firefox</b> are <b>NOT</b> advisable...there are problems with the ISO-8859-1 characters. Stick with Chrome or Opera instead :) - Baconfry</i></p></center>
+			</span>
+		</div>
+	</div>
+</div>
+<noscript style="background-color:white; width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; z-index: 9999; font-size: 3; text-align: center; padding-top: 20%;">Please enable JavaScript, most of my sites' funtionalities depend on it. After you've enabled JavaScript, reload the page and it should now work. Cheers. - Baconfry</noscript>
+<script>
+	var t = document.getElementById("trayler");
+	var m = document.getElementById("bgmusic");
+	function desu() {
+		m.pause();
+	}
+	function ka() {
+		if (document.getElementById("musicTest").classList.contains("null2")){
+		m.pause();
+	}
+		else {
+		setTimeout(function(){
+		m.play();
+		},1.5)
+	}
+	}
+	function musicPlay() {
+		m.play();
+		document.getElementById("musicTest").classList.remove("null2");
+		document.getElementById("musicTest").classList.add("null")
+	}
+	function musicPause() {
+		m.pause();
+		document.getElementById("musicTest").classList.remove("null");
+		document.getElementById("musicTest").classList.add("null2");
+	}
+</script>
+</html>
+

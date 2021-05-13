@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en" class="html-fix" id="eychteeemell">
+<title>Anime</title>
+<link rel="shortcut icon" href="icon.ico">
+<link rel="icon" href="icon.ico">
+<link rel="stylesheet" href="../css/anime.css">
+<audio id="bgmusic-kun" autoplay="true" loop><source src="music/bgmusic.mp3"></audio>
+<img src="anime-bg.jpg" class="bg"> 
+
+<div onclick="jumpWarper()" class="hide" id="returner">
+	<img src="up-arrow.png" class="returner" title="Scroll back to the warper!">
+</div>
+
+<!-- VERY IMPORTANT -->
+<script>
+	function AWW() {
+		var sp = document.getElementById("eychteeemell").classList 
+		var ss = document.getElementById("stato").classList
+		document.getElementById("bgmusic-kun").pause()
+		ss.remove("hide");
+		ss.add("visible");
+		setTimeout(function(){
+			ss.remove("visible");
+			ss.add("hide");
+			document.getElementById("bgmusic-kun").play()
+			sp.remove("html-fix")
+		}, 10000);
+	}
+	window.onload = AWW
+</script>
+<!-- END OF VERY IMPORTANT --> 
+
+<div class="hide" id="stato">
+	<div class="stato">
+		<p>For everything to run smoothly, I need you to please wait for 10 seconds, the station is loading its resources...<br><br>
+		About <span class="rainbow">1175</span> lines of <b>html</b> code and <span class="rainbow">946</span> lines of <b>css</b> code were used for this station, so please be patient!</p>
+		<center><img src="sorry.png"></center>
+	</div>
+</div>
+
+
+
+<div id="shelterr" class="hide">
+	<div class="special-wrapper">
+		<div class="special-dialog-shelter">
+			<div type="button" onclick="jumpHome()" class="closeStation" style="padding-top: 0px; color: cornsilk">×</div>
+				<div class="marg-fix-shelter">
+					<center><video id="shevid" controls src="shelter.mp4" class="shelt-vid" poster="shelter.jpg"></video></center>
+					<p>SHELTER tells the story of Rin, a 17-year-old girl who lives her life inside of a futuristic simulation completely by herself in infinite, beautiful loneliness. Each day, Rin awakens in virtual reality and uses a tablet which controls the simulation to create a new, different, beautiful world for herself. But all is not as it seems…</p>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div id="ddelcee" class="hide">
+	<div class="special-wrapper">
+		<div class="special-dialog-doki">
+			<div type="button" onclick="jumpHome()" class="closeStation" style="padding-top: 0px; color: forestgreen">×</div>
+				<div class="marg-fix-doki">
+					<center><video id="devid" controls src="ddlc.mp4" class="doki-vid"></video></center>
+					<p>Hi, Monika here!
+Welcome to the Literature Club! It's always been a dream of mine to make something special out of the things I love. Now that you're a club member, you can help me make that dream come true in this cute game!
+
+Every day is full of chit-chat and fun activities with all of my adorable and unique club members:
+
+Sayori, the youthful bundle of sunshine who values happiness the most;
+Natsuki, the deceivingly cute girl who packs an assertive punch;
+Yuri, the timid and mysterious one who finds comfort in the world of books;
+...And, of course, Monika, the leader of the club! That's me!
+
+I'm super excited for you to make friends with everyone and help the Literature Club become a more intimate place for all my members. But I can tell already that you're a sweetheart—will you promise to spend the most time with me? ♥</p>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div id="he-mann" class="hide">
+	<div class="special-wrapper">
+		<div class="special-dialog-heman">
+			<div type="button" onclick="jumpHome()" class="closeStation" style="padding-top: 4px; padding-left: 4px; color: yellow">×</div>
+				<div class="marg-fix-heman">
+					<center><video id="hevid" controls src="HEYEAYEAYEA!.mp4" class="heman-vid"></video></center>
+					<p>“HEYYEYAAEYAAAEYAEYAA” is the unofficial title of a 2005 animated music video in which the fictional superhero character He-Man sings a rendition of 4 Non Blondes’ 1992 hit rock single “What’s Up.” Since entering online circulation in May 2005, the video has been widely used as a popular material for bait-and-switch trolling, while spawning hundreds of remixes, parodies and music video tributes.</p>
+				</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="info-background" id="tooltipdesu" style="font-family: Helvetica">
+	<div class="info-dialogue">
+		<a href="#" class="closeStation" style="padding-top: 0px;">×</a>
+		<br>
+		<div class="info-fix">
+		<img src="original.gif" title="Hiiiii! Welcome to the Anime Station!" id="border-shadow" style="float: left; width: 7vw; height: auto; margin-right: 1vw; cursor: help;">
+		You are currently on the <span class="EGOIST">Anime Station</span>!<br><br>
+		<i>Forecast:</i> a little bit <span class="EGOIST">anime-ish</span>.<br>
+		<br>
+		<p><i>"<span class="rainbow">ANIME IS LOVE, ANIME IS LIFE!</span> Here are some of the goodies I have in store for you...However, due to file size reasons, I've removed all the album info and cover art of the music files. Enjoy!"</i> - Baconfry</p>	
+	<br>
+	<span class="EGOIST"><b>Settings:</b></span> <i>Click your desired option!</i><br>
+		Mute or unmute the background music:<br>
+			<div class="music">
+			<div style="border-bottom: 1px solid black"><button class="music-button" onclick="musicPause()">Mute&nbsp;<img src="muted.png" style="vertical-align: center;
+  			height: 2vh;
+	  		width: 2vh;">
+			</button></div>
+			<button class="music-button" onclick="musicPlay()">Unmute&nbsp;<img src="unmuted.png"></button>
+			</div><br>
+		</div>
+	</div>
+</div>
+
+<!-- This div is shared across the sites -->
+<div class="about-background" id="Baconfry-sama" style="font-family: Helvetica">
+	<div class="about-dialogue">
+		<a href="#" class="closeStation" style="padding-top: 0px;">×</a>
+		<br>
+		<div class="about-fix">
+		<h3><b>About the Author (and Contributors!)</b></h3>
+		<img src="lala.gif" title="Lala-chan from To Love-Ru!" class="lala"><b>The Author</b><font size="2" face="Trebuchet MS">
+			<li><b>Name:</b>  John Billy James Cale </li>
+			<li><b>Alias(es):</b> Baconfry; <b>h_a_c_k_e_r_m_a_n</b>; <i>the <span class="rainbow">awesome-est</span> guy alive</i></li>
+			<li><b>Age:</b> 7332 years...but my human age is 15 I guess</li>
+			<li><b>Location:</b>  Under the sea</li>
+			<li><b>Gender:</b>  Male, duh</li>
+			<li><b>Additional Information:</b> One of the five idiots</li>
+		</font><br><h4 style="text-align: center; font-size: 85%;">Here are the contributors of the resources...I couldn't have done all of this without them!</h4>
+			<span style="font-size: 80%;">
+		<li>The <span style="color: darkred; font-weight: bold;">Pinterest</span> community (Litter box pictures and GIFs) and <span style="color: royalblue; font-weight: bold">Google Images</span> (Other pictures and stuff)</li>
+		<li><span style="color: green; font-weight: bold;">W3Schools</span> (Dropdown code)</li>
+		<li><span style="color: orange; font-weight: bold;">Concerned Ape &amp; Chuckle Fish</span> (Stardew Valley)</li>
+		<li><span style="color: deeppink; font-weight: bold">EGOIST</span>, <span style="color: indigo; font-weight: bold">RADWIMPS</span>, <span style="color: lightsalmon; font-weight: bold;">Tokyo Karonkoron</span>, <span style="color: darkblue; font-weight: bold;">Ayaka Ohashi</span> and <span style="color: gold; font-weight: bold;">Ai Kayano</span> (Anime music)</li>
+		<li><span style="color: navy"><b>STEREO DIVE FOUNDATION</b></span> &amp; <span style="color: deeppink"><b>supercell</b></span> (Anime music)</li>
+		<li><b>Eric Matyas</b> (Background music on the Main Station)</li>
+		<li><b><i>Wikipedia</i></b> (Anime description)</li>
+		<li><span style="color: magenta; font-weight: bold;">Team Salvato</span> (Doki Doki Literature Club) and <span style="color: purple; font-weight: bold;">Porter Robinson &amp; Madeon</span> (Shelter)</li>
+		<center><p><i>That's about it! The sites were made with <font color="fuchsia"><b>lots of love</b></font> and were tested (and worked beautifully!) on Google Chrome (v63.0.3239.84) and Opera (v49.0.2725.64). However... <b>Microsoft Edge</b>, <b>Internet Explorer</b>, <b>Safari</b>, and <b>Mozilla Firefox</b> are <b>NOT</b> advisable...there are problems with the ISO-8859-1 characters. Stick with Chrome or Opera instead :) - Baconfry</i></p></center>
+			</span>
+		</div>
+	</div>
+</div>
+<a href="backtostation.html" title="Go back to the station?">
+	<div class="bts" id="tab">
+		<center>
+			<span id="bluck">Back to Main Station</span>
+		</center>
+	</div>
+</a>
+<a href="#tooltipdesu">
+	<div class="info" id="tab">
+		<center>
+			<span id="bluck2">Info</span>
+		</center>
+	</div>
+</a>
+<a href="#Baconfry-sama">
+	<div class="authorinfo" id="tab">
+		<center>
+			<span id="bluck3">About</span>
+		</center>
+	</div>
+</a>
+
+<img src="header.png" class="normie"><span class="rawr"><img src="anime.png" class="anime"><div class="cover-er"></div></span>
+
+
+<div class="contentdesu">
+	<br>
+	<center><span class="head"><img src="left.jpg" class="left"><img src="right.jpg" class="right">Welcome to the Anime Station!</span><br><br>
+		<span class="head2">Click on the <i>buttons</i> below if you want to warp on a specific section</span>
+	</center>
+	<br> 
+	<center><span class="jumper"><br><br><br><span style="font-size: 5vh;">Jump to content:</span><br>
+		<table>
+			<tr>
+				<td><div class="jumper-button" type="button" onclick="jumpAnime()" title="Click to jump to this section!">Anime? Anime!</div></td>
+				<td><div class="jumper-button" type="button" onclick="jumpPictures()" title="Click to jump to pictures!">Gallery</div></td>
+				<td><div class="jumper-button" type="button" onclick="jumpMusic()" title="Click to jump to music!">Music</div></td>
+			</tr>
+		</table><br>
+		<table>
+		<span style="font-size: 5vh;">Special warps:</span><br><br>
+			<tr>
+			<center><div class="button-shelter" type="button" onclick="jumpShelter()" title="Click to jump to Shelter! (Video)">Shelter</div></center>
+			<center><div class="button-doki" type="button" onclick="jumpDoki()" title="Click to jump to DDLC! (Video)"><font face="Comic Sans MS"><b>
+				<span style="color: #ff6699;">D</span><span style="color:#ff99cc;">O</span><span style="color:#ccff99;">K</span><span style="color:#ff6699;">I</span> <span style="color:#cc99ff;">D</span><span style="color:#ff99cc;">O</span><span style="color:#ccffff;">K</span><span style="color:#cc99ff;">I</span>
+				</b><span id="lc">Literature Club!</span></font></div></center>
+				<div class="button-heyea" type="button" onclick="jumpHeyea()" title="Click to laugh! (Video)">HEYEAYEAYEA!</div>
+				</tr>
+			</table>
+		</span>
+	</center>
+
+	<div class="anime-anime">
+	<span style="font-size: 3vw; font-family: Helvetica; font-weight: bold;">Anime? Anime! </span><br><br><i>Get Ready for Wikipedia Bombing, hehehe. If you're not interested in this, use the warp buttons :)</i><br><br>
+	<b>Anime</b> (/ˈænəˌmeɪ/ (Japanese: アニメ, plural: anime)) is a Japanese term for hand-drawn or computer animation. The word is the abbreviated pronunciation of "animation" in Japanese, where this term references all animation. Outside Japan, anime is used to refer specifically to animation from Japan or as a Japanese-disseminated animation style often characterized by colorful graphics, vibrant characters and fantastical themes. Arguably, the culturally abstract approach to the word's meaning may open up the possibility of anime produced in countries other than Japan. For simplicity, many Westerners strictly view anime as a Japanese animation product. Some scholars suggest defining anime as specifically or quintessentially Japanese may be related to a new form of orientalism.
+	<br><br>
+	The earliest commercial Japanese animation dates to 1917, and Japanese anime production has since continued to increase steadily. The characteristic anime art style emerged in the 1960s with the works of Osamu Tezuka and spread internationally in the late twentieth century, developing a large domestic and international audience. Anime is distributed theatrically, by way of television broadcasts, directly to home media, and over the Internet. It is classified into numerous genres targeting diverse broad and niche audiences.
+	<br><br>
+	Anime is a diverse art form with distinctive production methods and techniques that have been adapted over time in response to emergent technologies. It consists of an ideal story-telling mechanism, combining graphic art, characterization, cinematography, and other forms of imaginative and individualistic techniques. The production of anime focuses less on the animation of movement and more on the realism of settings as well as the use of camera effects, including panning, zooming, and angle shots. Being hand-drawn, anime is separated from reality by a crucial gap of fiction that provides an ideal path for escapism that audiences can immerse themselves into with relative ease. Diverse art styles are used and character proportions and features can be quite varied, including characteristically large emotive or realistically sized eyes.
+	<br><br>
+	The anime industry consists of over 430 production studios, including major names like Studio Ghibli, Gainax, and Toei Animation. Despite comprising only a fraction of Japan's domestic film market, anime makes up a majority of Japanese DVD sales. It has also seen international success after the rise of English-dubbed programming. This rise in international popularity has resulted in non-Japanese productions using the anime art style, but these works are usually described as anime-influenced animation rather than anime proper.
+	<br><br>
+	<hr>
+	<br>
+	Anime is an art form, specifically animation, that includes all genres found in cinema, but it can be mistakenly classified as a genre. In Japanese, the term anime refers to all forms of animation from around the world. In English, anime (/ˈænəˌmeɪ/) is more restrictively used to denote a "Japanese-style animated film or television entertainment" or as "a style of animation created in Japan".
+	<br><br>
+	The etymology of the word anime is disputed. The English term "animation" is written in Japanese katakana as アニメーション and is アニメ (anime) in its shortened form. Some sources claim that anime derives from the French term for animation dessin animé, but others believe this to be a myth derived from the French popularity of the medium in the late 1970s and 1980s. In English, anime—when used as a common noun—normally functions as a mass noun. (For example: "Do you watch anime?" or "How much anime have you collected?") Prior to the widespread use of anime, the term Japanimation was prevalent throughout the 1970s and 1980s. In the mid-1980s, the term anime began to supplant Japanimation. In general, the latter term now only appears in period works where it is used to distinguish and identify Japanese animation.
+	<br><br>
+	The word anime has also been criticised, e.g. in 1987, when Hayao Miyazaki stated that he despised the truncated word anime because to him it represented the desolation of the Japanese animation industry. He equated the desolation with animators lacking motivation and with mass-produced, overly expressionistic products relying upon a fixed iconography of facial expressions and protracted and exaggerated action scenes but lacking depth and sophistication in that they do not attempt to convey emotion or thought.
+	<br><br>
+	<hr>
+	<br>
+	The first format of anime was theatrical viewing which originally began with commercial productions in 1917. Originally the animated flips were crude and required played musical components before adding sound and vocal components to the production. On July 14, 1958, Nippon Television aired Mogura no Abanchūru ("Mole's Adventure"), both the first televised and first color anime to debut. It wasn't until the 1960s when the first televised series were broadcast and it has remained a popular medium since. Works released in a direct to video format are called "original video animation" (OVA) or "original animation video" (OAV); and are typically not released theatrically or televised prior to home media release. The emergence of the Internet has led some animators to distribute works online in a format called "original net anime" (ONA).
+	<br><br>
+	The home distribution of anime releases were popularized in the 1980s with the VHS and LaserDisc formats. The VHS NTSC video format used in both Japan and the United States is credited as aiding the rising popularity of anime in the 1990s. The Laser Disc and VHS formats were transcended by the DVD format which offered the unique advantages; including multiple subtitling and dubbing tracks on the same disc. The DVD format also has its drawbacks in the its usage of region coding; adopted by the industry to solve licensing, piracy and export problems and restricted region indicated on the DVD player. The Video CD (VCD) format was popular in Hong Kong and Taiwan, but became only a minor format in the United States that was closely associated with bootleg copies.
+	<br><br>
+	<hr>
+	<br>
+	Japanese animation began in the early 20th century, when Japanese filmmakers experimented with the animation techniques also pioneered in France, Germany, the United States and Russia. A claim for the earliest Japanese animation is Katsudō Shashin, an undated and private work by an unknown creator. In 1917, the first professional and publicly displayed works began to appear. Animators such as Ōten Shimokawa and Seitarou Kitayama produced numerous works, with the oldest surviving film being Kouchi's Namakura Gatana, a two-minute clip of a samurai trying to test a new sword on his target only to suffer defeat. The 1923 Great Kantō earthquake resulted in widespread destruction to Japan's infrastructure and the destruction of Shimokawa's warehouse, destroying most of these early works.
+	<br><br>
+	By the 1930s animation was well established in Japan as an alternative format to the live-action industry. It suffered competition from foreign producers and many animators, Noburō Ōfuji and Yasuji Murata, who still worked in cheaper cutout animation rather than cel animation. Other creators, Kenzō Masaoka and Mitsuyo Seo, nonetheless made great strides in animation technique; they benefited from the patronage of the government, which employed animators to produce educational shorts and propaganda. The first talkie anime was Chikara to Onna no Yo no Naka, produced by Masaoka in 1933. By 1940, numerous anime artists' organizations had risen, including the Shin Mangaha Shudan and Shin Nippon Mangaka. The first feature-length animated film was Momotaro's Divine Sea Warriors directed by Seo in 1944 with sponsorship by the Imperial Japanese Navy.
+	<br><br>
+	The success of The Walt Disney Company's 1937 feature film Snow White and the Seven Dwarfs profoundly influenced many Japanese animators. In the 1960s, manga artist and animator Osamu Tezuka adapted and simplified many Disney animation techniques to reduce costs and to limit the number of frames in productions. He intended this as a temporary measure to allow him to produce material on a tight schedule with inexperienced animation staff. Three Tales, aired in 1960, was the first anime shown on television. The first anime television series was Otogi Manga Calendar, aired from 1961 to 1964.
+	<br><br>
+	The 1970s saw a surge of growth in the popularity of manga, Japanese comic books and graphic novels, many of which were later animated. The work of Osamu Tezuka drew particular attention: he has been called a "legend" and the "god of manga". His work—and that of other pioneers in the field—inspired characteristics and genres that remain fundamental elements of anime today. The giant robot genre (known as "mecha" outside Japan), for instance, took shape under Tezuka, developed into the Super Robot genre under Go Nagai and others, and was revolutionized at the end of the decade by Yoshiyuki Tomino who developed the Real Robot genre. Robot anime like the Gundam and The Super Dimension Fortress Macross series became instant classics in the 1980s, and the robot genre of anime is still one of the most common in Japan and worldwide today. In the 1980s, anime became more accepted in the mainstream in Japan (although less than manga), and experienced a boom in production. Following a few successful adaptations of anime in overseas markets in the 1980s, anime gained increased acceptance in those markets in the 1990s and even more at the turn of the 21st century. In 2002, Spirited Away, a Studio Ghibli production directed by Hayao Miyazaki won the Golden Bear at the Berlin International Film Festival and in 2003 at the 75th Academy Awards it won the Academy Award for Best Animated Feature.
+	<br><br>
+	<hr>
+	<br>
+	Anime are often classified by target demographic, including kodomo (children's), shōjo (girls'), shōnen (boys') and a diverse range of genres targeting an adult audience. Shoujo and shounen anime sometimes contain elements popular with children of both sexes in an attempt to gain crossover appeal. Adult anime may feature a slower pace or greater plot complexity that younger audiences typically find unappealing, as well as adult themes and situations. A subset of adult anime works feature pornographic elements and are labeled "R18" in Japan, but internationally these works are grouped together under the term hentai (Japanese for "pervert"). By contrast, a variety of anime subgenres across demographic groups incorporate ecchi, sexual themes or undertones without depictions of sexual intercourse, as typified in the comedic or harem genres; due to its popularity among adolescent and adult anime enthusiasts, incorporation of ecchi elements in anime is considered a form of fan service.
+	<br><br>
+	Anime's genre classification is different from other types of animation and does not lend itself to simple identity. Gilles Poitras compared the labeling Gundam 0080 and its complex depiction of war as a "giant robot" anime akin to simply labeling War and Peace a "war novel". Science fiction is a major anime genre and includes important historical works like Tezuka's Astro Boy and Yokoyama's Tetsujin 28-go. A major subgenre of science fiction is mecha, with the Gundam metaseries being iconic. The diverse fantasy genre includes works based on Asian and Western traditions and folklore; examples include the Japanese feudal fairytale InuYasha, and the depiction of Scandinavian goddesses who move to Japan to maintain a computer called Yggdrasil in Ah! My Goddess. Genre crossing in anime is also prevalent, such as the blend of fantasy and comedy in Dragon Half, and the incorporation of slapstick humor in the crime anime Castle of Cagliostro. Other subgenres found in anime include magical girl, harem, sports, martial arts, literary adaptations, medievalism, and war.
+	<br><br>
+	Genres have emerged that explore homosexual romances. While originally pornographic in terminology, yaoi (male homosexuality) and yuri (female homosexuality) are broad terms used internationally to describe any focus on the themes or development of romantic homosexual relationships. Prior to 2000, homosexual characters were typically used for comedic effect, but some works portrayed these characters seriously or sympathetically.
+	<br><br>
+	<hr>
+	<br>
+	Anime differs greatly from other forms of animation by its diverse art styles, methods of animation, its production, and its process. Visually, anime is a diverse art form that contains a wide variety of art styles, differing from one creator, artist, and studio. While no one art style predominates anime as a whole, they do share some similar attributes in terms of animation technique and character design.
+	<br><br>
+	<hr>
+	<br>
+	Anime follows the typical production of animation, including storyboarding, voice acting, character design, and cel production (Shirobako, itself a series, highlights many of the aspects involved in anime production). Since the 1990s, animators have increasingly used computer animation to improve the efficiency of the production process. Artists like Noburō Ōfuji pioneered the earliest anime works, which were experimental and consisted of images drawn on blackboards, stop motion animation of paper cutouts, and silhouette animation. Cel animation grew in popularity until it came to dominate the medium. In the 21st century, the use of other animation techniques is mostly limited to independent short films, including the stop motion puppet animation work produced by Tadahito Mochinaga, Kihachirō Kawamoto and Tomoyasu Murata. Computers were integrated into the animation process in the 1990s, with works such as Ghost in the Shell and Princess Mononoke mixing cel animation with computer-generated images. Fuji Film, a major cel production company, announced it would stop cel production, producing an industry panic to procure cel imports and hastening the switch to digital processes.
+
+	Prior to the digital era, anime was produced with traditional animation methods using a pose to pose approach. The majority of mainstream anime uses fewer expressive key frames and more in-between animation.
+
+	Japanese animation studios were pioneers of many limited animation techniques, and have given anime a distinct set of conventions. Unlike Disney animation, where the emphasis is on the movement, anime emphasizes the art quality and let limited animation techniques make up for the lack of time spent on movement. Such techniques are often used not only to meet deadlines but also as artistic devices. Anime scenes place emphasis on achieving three-dimensional views, and backgrounds are instrumental in creating the atmosphere of the work. The backgrounds are not always invented and are occasionally based on real locations, as exemplified in Howl's Moving Castle and The Melancholy of Haruhi Suzumiya. Oppliger stated that anime is one of the rare mediums where putting together an all-star cast usually comes out looking "tremendously impressive".
+
+	The cinematic effects of anime differentiates itself from the stage plays found in American animation. Anime is cinematically shot as if by camera, including panning, zooming, distance and angle shots to more complex dynamic shots that would be difficult to produce in reality. In anime, the animation is produced before the voice acting, contrary to American animation which does the voice acting first; this can cause lip sync errors in the Japanese version.
+	<br><br>
+	<hr>
+	<br>
+	Body proportions of human anime characters tend to accurately reflect the proportions of the human body in reality. The height of the head is considered by the artist as the base unit of proportion. Head heights can vary, but most anime characters are about seven to eight heads tall. Anime artists occasionally make deliberate modifications to body proportions to produce super deformed characters that feature a disproportionately small body compared to the head; many super deformed characters are two to four heads tall. Some anime works like Crayon Shin-chan completely disregard these proportions, such that they resemble Western cartoons.
+	<br><br>
+	A common anime character design convention is exaggerated eye size. The animation of characters with large eyes in anime can be traced back to Osamu Tezuka, who was deeply influenced by such early animation characters as Betty Boop, who was drawn with disproportionately large eyes. Tezuka is a central figure in anime and manga history, whose iconic art style and character designs allowed for the entire range of human emotions to be depicted solely through the eyes. The artist adds variable color shading to the eyes and particularly to the cornea to give them greater depth. Generally, a mixture of a light shade, the tone color, and a dark shade is used. Cultural anthropologist Matt Thorn argues that Japanese animators and audiences do not perceive such stylized eyes as inherently more or less foreign. However, not all anime have large eyes. For example, the works of Hayao Miyazaki are known for having realistically proportioned eyes, as well as realistic hair colors on their characters.
+	<br><br>
+	Hair in anime is often unnaturally lively and colorful or uniquely styled. The movement of hair in anime is exaggerated and "hair action" is used to emphasize the action and emotions of characters for added visual effect. Poitras traces hairstyle color to cover illustrations on manga, where eye-catching artwork and colorful tones are attractive for children's manga. Despite being produced for a domestic market, anime features characters whose race or nationality is not always defined, and this is often a deliberate decision, such as in the Pokémon animated series.
+	<br><br>
+	Anime and manga artists often draw from a common canon of iconic facial expression illustrations to denote particular moods and thoughts. These techniques are often different in form than their counterparts in Western animation, and they include a fixed iconography that is used as shorthand for certain emotions and moods. For example, a male character may develop a nosebleed when aroused. A variety of visual symbols are employed, including sweat drops to depict nervousness, visible blushing for embarrassment, or glowing eyes for an intense glare.
+	<br><br>
+	<hr>
+	<br>
+	The opening and credits sequences of most anime television episodes are accompanied by Japanese pop or rock songs, often by reputed bands. They may be written with the series in mind, but are also aimed at the general music market, and therefore often allude only vaguely or not at all to the themes or plot of the series. Pop and rock songs are also sometimes used as incidental music ("insert songs") in an episode, often to highlight particularly important scenes.
+	<br><br>
+	<hr>
+	<br>
+	The animation industry consists of more than 430 production companies with some of the major studios including Toei Animation, Gainax, Madhouse, Gonzo, Sunrise, Bones, TMS Entertainment, Nippon Animation, P.A.Works, Studio Pierrot and Studio Ghibli. Many of the studios are organized into a trade association, The Association of Japanese Animations. There is also a labor union for workers in the industry, the Japanese Animation Creators Association. Studios will often work together to produce more complex and costly projects, as done with Studio Ghibli's Spirited Away. An anime episode can cost between US$100,000 and US$300,000 to produce. In 2001, animation accounted for 7% of the Japanese film market, above the 4.6% market share for live-action works. The popularity and success of anime is seen through the profitability of the DVD market, contributing nearly 70% of total sales. According to a 2016 article on Nikkei Asian Review, Japanese television stations have bought over ¥60 billion worth of anime from production companies "over the past few years", compared with under ¥20 billion from overseas. There has been a rise in sales of shows to television stations in Japan, caused by late night anime with adults as the target demographic. This type of anime is less popular outside Japan, being considered "more of a niche product". Spirited Away (2001) is the all-time highest-grossing film in Japan. It was also the highest-grossing anime film worldwide until it was overtaken by Makoto Shinkai's 2016 film Your Name. Anime films represent a large part of the highest-grossing Japanese films yearly in Japan, with 6 out of the top 10 in 2014, in 2015 and also in 2016.
+	<br><br>
+	Anime has to be licensed by companies in other countries in order to be legally released. While anime has been licensed by its Japanese owners for use outside Japan since at least the 1960s, the practice became well-established in the United States in the late 1970s to early 1980s, when such TV series as Gatchaman and Captain Harlock were licensed from their Japanese parent companies for distribution in the US market. The trend towards American distribution of anime continued into the 1980s with the licensing of titles such as Voltron and the 'creation' of new series such as Robotech through use of source material from several original series.
+	<br><br>
+	In the early 1990s, several companies began to experiment with the licensing of less children-oriented material. Some, such as A.D. Vision, and Central Park Media and its imprints, achieved fairly substantial commercial success and went on to become major players in the now very lucrative American anime market. Others, such as AnimEigo, achieved limited success. Many companies created directly by Japanese parent companies did not do as well, most releasing only one or two titles before completing their American operations.
+	<br><br>
+	Licenses are expensive, often hundreds of thousands of dollars for one series and tens of thousands for one movie. The prices vary widely; for example, Jinki: Extend cost only $91,000 to license while Kurau Phantom Memory cost $960,000. Simulcast Internet streaming rights can be less expensive, with prices around $1,000-$2,000 an episode, but can also be more expensive, with some series costing more than US$200,000 per episode.
+	<br><br>
+	The anime market for the United States was worth approximately $2.74 billion in 2009. Dubbed animation began airing in the United States in 2000 on networks like The WB and Cartoon Network's Adult Swim. In 2005, this resulted in five of the top ten anime titles having previously aired on Cartoon Network. As a part of localization, some editing of cultural references may occur to better follow the references of the non-Japanese culture. The cost of English localization averages US $10,000 per episode.
+	<br><br>
+	The industry has been subject to both praise and condemnation for fansubs, the addition of unlicensed and unauthorized subtitled translations of anime series or films. Fansubs, which were originally distributed on VHS bootlegged cassettes in the 1980s, have been freely available and disseminated online since the 1990s. Since this practice raises concerns for copyright and piracy issues, fansubbers tend to adhere to an unwritten moral code to destroy or no longer distribute an anime once an official translated or subtitled version becomes licensed. They also try to encourage viewers to buy an official copy of the release once it comes out in English, although fansubs typically continue to circulate through file sharing networks. Even so, the laid back regulations of the Japanese animation industry tends to overlook these issues, allowing it to grow underground and thus increasing the popularity until there is a demand for official high quality releases for animation companies. This has led to an increase in global popularity with Japanese animations, reaching $40 million in sales in 2004.
+	<br><br>
+	Legal international availability of anime on the Internet has changed in recent years, with simulcasts of series available on websites like Crunchyroll.
+	<br><br>
+	<hr>
+	<br>
+	The anime industry has several annual awards which honor the year's best works. Major annual awards in Japan include the Ōfuji Noburō Award, the Mainichi Film Award for Best Animation Film, the Animation Kobe Awards, the Japan Media Arts Festival animation awards, the Tokyo Anime Award and the Japan Academy Prize for Animation of the Year. In the United States, anime films compete in the ICv2.com Anime Awards There were also the American Anime Awards, which were designed to recognize excellence in anime titles nominated by the industry, and were held only once in 2006. Anime productions have also been nominated and won awards not exclusively for anime, like the Academy Award for Best Animated Feature or the Golden Bear.
+	<br><br>
+	<hr>
+	<br>
+	Anime has become commercially profitable in Western countries, as demonstrated by early commercially successful Western adaptations of anime, such as Astro Boy and Speed Racer. Early American adaptions in the 1960s made Japan expand into the continental European market, first with productions aimed at European and Japanese children, such as Heidi, Vicky the Viking and Barbapapa, which aired in various countries. Particularly Italy, Spain and France grew an interest into Japan's output, due to its cheap selling price and productive output. In fact, Italy imported the most anime outside of Japan. These mass imports influenced anime popularity in South American, Arabic and German markets.
+	<br><br>
+	The beginning of 1980 saw the introduction of Japanese anime series into the American culture. In the 1990s, Japanese animation slowly gained popularity in America. Media companies such as Viz and Mixx began publishing and releasing animation into the American market. The growth of the Internet provided Western audiences an easy way to access Japanese content. This is especially the case with net services such as Netflix and Crunchyroll. As a direct result, various interests surrounding Japan has increased.
+	<br><br>
+	<hr>
+	<br>
+	Anime clubs gave rise to anime conventions in the 1990s with the "anime boom", a period marked by increased popularity of anime. These conventions are dedicated to anime and manga and include elements like cosplay contests and industry talk panels. Cosplay, a portmanteau for "costume play", is not unique to anime and has become popular in contests and masquerades at anime conventions. Japanese culture and words have entered English usage through the popularity of the medium, including otaku, a derogatory Japanese term commonly used in English to denote a fan of anime and manga. Another word that has arisen describing fans in the United States is wapanese meaning White individuals who desire to be Japanese, or later known as weeaboo for individuals who demonstrate a strong interest in Japanese anime subculture, which is a term that originated from abusive content posted on the popular bulletin board website 4chan.org. Anime enthusiasts have produced fan fiction and fan art, including computer wallpaper and anime music videos.
+	<br><br>
+	<hr>
+	<br>
+	One of the key points that made anime different from popular Western animation is the emotional content. Once the expectation that the aspects of visual intrigue or animation being just for children is put aside, the audience can realize that many emotions such as suffering, death, pain, struggle, and joy can all be storytelling elements utilized in anime as much as other types of media. However, as anime itself became increasingly popular, anime styling has been inevitably the subject of both satire and serious creative productions. South Park's "Chinpokomon" and "Good Times with Weapons" episodes, Adult Swim's Perfect Hair Forever, and Nickelodeon's Kappa Mikey are examples of satirical depictions of Japanese culture and anime. Some works have sparked debate for blurring the lines between satire and serious "anime style" productions, such as the American anime style production Avatar: The Last Airbender. These anime styled works have become defined as anime-influenced animation, in an attempt to classify all anime styled works of non-Japanese origin. Some creators of these works cite anime as a source of inspiration and like the French production team for Ōban Star-Racers moved to Tokyo to collaborate with a Japanese production team. When anime is defined as a "style" rather than as a national product it leaves open the possibility of anime being produced in other countries. A U.A.E.-Filipino produced TV series called Torkaizer is dubbed as the "Middle East's First Anime Show", and is currently in production, which is currently looking for funding. The web-based series RWBY is produced using an anime art style and has been declared to be anime. In addition, the series will be released in Japan, under the label of "anime" per the Japanese definition of the term and referenced as an "American-made anime". Netflix declared the company's intention to produce anime. In doing so, the company is offering a more accessible channel for distribution to Western markets. Defining anime as style has been contentious amongst fans, with John Oppliger stating, "The insistence on referring to original American art as Japanese "anime" or "manga" robs the work of its cultural identity."
+	<br><br>
+	<center>
+		<h2>Done reading? Use the button on the upper right to jump back to the warper!</h2>
+		<div style="visibility: hidden">
+			<span class="home-button" type="button" onclick="jumpWarper()">Jump to Warper</span>
+		</div>
+	</center>
+	</div>
+
+
+	<div class="jumper" style="border-top: none;"></div>
+
+	<div class="picturez">
+		<span style="font-size: 3vw; font-family: Helvetica; font-weight: bold;">Gallery!</span><br><br>
+		<center><i style="color: white;">Lolis, cat girls, or nice body proportions...you get to enjoy them all! Beware though...the FBI is watching *peep*!</i></center>
+	<br>
+
+	<center class="pisz">
+	<td><img src="pics\p (1).gif" class="image-render"></td>
+	<td><img src="pics\p (1).png" class="image-render"></td>
+	<td><img src="pics\p (1).jpg" class="image-render"></td>
+	<td><img src="pics\p (2).png" class="image-render"></td>
+	<td><img src="pics\p (2).jpg" class="image-render"></td>
+	<td><img src="pics\p (2).gif" class="image-render"></td>
+	<td><img src="pics\p (3).jpg" class="image-render"></td>
+	<td><img src="pics\p (3).gif" class="image-render"></td>	
+	<td><img src="pics\p (3).png" class="image-render"></td>
+	<td><img src="pics\p (4).jpg" class="image-render"></td>
+	<td><img src="pics\p (4).png" class="image-render"></td>
+	<td><img src="pics\p (5).jpg" class="image-render"></td>
+	<td><img src="pics\p (5).png" class="image-render"></td>
+	<td><img src="pics\p (6).jpg" class="image-render"></td>
+	<td><img src="pics\p (7).jpg" class="image-render"></td>
+	<td><img src="pics\p (8).jpg" class="image-render"></td>
+	<td><img src="pics\p (9).jpg" class="image-render"></td>
+	<td><img src="pics\p (10).jpg" class="image-render"></td>
+	<td><img src="pics\p (11).jpg" class="image-render"></td>
+	<td><img src="pics\p (13).jpg" class="image-render"></td>
+	<td><img src="pics\p (12).jpg" class="image-render"></td>
+	<td><img src="pics\p (14).jpg" class="image-render"></td>
+	<td><img src="pics\p (16).jpg" class="image-render"></td>	
+	<td><img src="pics\p (15).jpg" class="image-render"></td>
+	<td><img src="pics\p (17).jpg" class="image-render"></td>
+	<td><img src="pics\p (19).jpg" class="image-render"></td>	
+	<td><img src="pics\p (18).jpg" class="image-render"></td>
+	<td><img src="pics\p (20).jpg" class="image-render"></td>
+	<td><img src="pics\p (22).jpg" class="image-render"></td>	
+	<td><img src="pics\p (21).jpg" class="image-render"></td>	
+	<td><img src="pics\p (23).jpg" class="image-render"></td>
+	<td><img src="pics\p (25).jpg" class="image-render"></td>	
+	<td><img src="pics\p (24).jpg" class="image-render"></td>	
+	<td><img src="pics\p (28).jpg" class="image-render"></td>	
+	<td><img src="pics\p (27).jpg" class="image-render"></td>	
+	<td><img src="pics\p (29).jpg" class="image-render"></td>
+	<td><img src="pics\p (30).jpg" class="image-render"></td>
+	<td><img src="pics\p (31).jpg" class="image-render"></td>
+	<td><img src="pics\p (32).jpg" class="image-render"></td>
+	<td><img src="pics\p (34).jpg" class="image-render"></td>	
+	<td><img src="pics\p (33).jpg" class="image-render"></td>	
+	<td><img src="pics\p (35).jpg" class="image-render"></td>
+	<td><img src="pics\p (36).jpg" class="image-render"></td>
+	<td><img src="pics\p (37).jpg" class="image-render"></td>	
+	<td><img src="pics\p (38).jpg" class="image-render"></td>
+	<td><img src="pics\p (39).jpg" class="image-render"></td>
+	<td><img src="pics\p (40).jpg" class="image-render"></td>	
+	<td><img src="pics\p (41).jpg" class="image-render"></td>
+	<td><img src="pics\p (42).jpg" class="image-render"></td>
+	<td><img src="pics\p (43).jpg" class="image-render"></td>		
+	<td><img src="pics\p (44).jpg" class="image-render"></td>
+	<td><img src="pics\p (45).jpg" class="image-render"></td>
+	<td><img src="pics\p (46).jpg" class="image-render"></td>
+	<td><img src="pics\p (47).jpg" class="image-render"></td>
+	<td><img src="pics\p (48).jpg" class="image-render"></td>
+	<td><img src="pics\p (49).jpg" class="image-render"></td>
+	<td><img src="pics\p (50).jpg" class="image-render"></td>
+	<td><img src="pics\p (52).jpg" class="image-render"></td>
+	<td><img src="pics\p (51).jpg" class="image-render"></td>		
+	<td><img src="pics\p (53).jpg" class="image-render"></td>
+	<td><img src="pics\p (54).jpg" class="image-render"></td>
+	<td><img src="pics\p (55).jpg" class="image-render"></td>		
+	<td><img src="pics\p (56).jpg" class="image-render"></td>
+	<td><img src="pics\p (57).jpg" class="image-render"></td>
+	<td><img src="pics\p (58).jpg" class="image-render"></td>		
+	<td><img src="pics\p (59).jpg" class="image-render"></td>
+	<td><img src="pics\p (60).jpg" class="image-render"></td>
+	<td><img src="pics\p (61).jpg" class="image-render"></td>
+	<td><img src="pics\p (62).jpg" class="image-render"></td>
+	<td><img src="pics\p (63).jpg" class="image-render"></td>
+	<td><img src="pics\p (64).jpg" class="image-render"></td>
+	<td><img src="pics\q.jpg" class="image-render"></td>
+	<td><img src="pics\u.jpg" class="image-render"></td>
+	<td><img src="pics\p (65).jpg" class="image-render"></td>
+		</center>
+	<center><i>See anything you like? To download an image, right click it and click "Save image as..."</i></center>
+	</center>
+		<center><div style="visibility: hidden">
+		<h2>Use this button to jump back to the warper!</h2>
+		<span class="home-button" type="button" onclick="jumpWarper()">Jump to Warper</span></div>
+	</center>
+	</div>
+
+
+	<div class="jumper" style="border-top: none;"></div>
+<div class="block">
+	<div class="music-content">
+		<span style="font-size: 3vw; font-family: Helvetica; font-weight: bold;">Music!</span><br><br>
+		<br>
+		<div class="alone-with-you"><img src="all-alone-with-you.jpg" type="button" class="mp3-art">
+			<span class="music-info">All Alone With You<br><span class="EGOIST">EGOIST</span></span>
+			<audio controls preload="none" src="music/all-alone-with-you.mp3" id="alone-with-you"></audio><br><br>
+			<center><span class="lyrics"><b>LYRICS:</b><br>
+Dareka wo aisuru koto nante<br>
+Dekiru wake nakute<br>
+Dakedo dareka ni aisaretakute<br>
+Kawaranai kinou ga zutto tsuzuita toshite mo<br>
+Doko ni mo ike ya shinai'nda<br>
+Watashi to kimi<br>
+<br>
+Kami-sama  doko e itte shimatta no  nee <br>
+Henji wa nakute  itsudatte sou da yo <br>
+Are you still here?<br>
+<br>
+You'll never walk alone<br> 
+Anata to yuku <br>
+Donna tsumi mo <br>
+Seotte ageru <br>
+Michinaki michi wo <br>
+Aruiteku no <br>
+Anata to futari de<br>
+<br>
+Kocchi ni kite <br>
+Watashi ni furete  KISU wo shite <br>
+Motto mechakucha ni <br>
+shitatte ii'n da yo? <br>
+Itsuka dare mo ga shinjatte <br>
+Wasurareteku nara <br>
+Ima tashika na mono dake wo shinjiru wa<br>
+<br>
+Kami-sama kidori no hito ga iu no <br>
+Nee  hito wa tsuyoi tte <br>
+Sonna no uso da yo <br>
+Do you agree?<br>
+<br>
+I will stay with you <br>
+Anata no te de <br>
+Dakishimete yo <br>
+Omoikkiri <br>
+Kowagaranai de<br> 
+Mou daijoubu  watashi nara<br>
+<br>
+Sono te ga yogorete <br>
+Shimatta toshite mo <br>
+Aishite hoshii <br>
+Watashi no koto<br>
+<br>
+You'll never walk alone <br>
+Anata to yuku <br>
+Donna tsumi mo <br>
+Seotte ageru <br>
+Michinaki michi wo <br>
+Aruiteku no <br>
+Anata to<br>
+<br>
+I will stay with you <br>
+Anata no te de <br>
+Dakishimete yo <br>
+Omoikkiri <br>
+Nozomenai mono wa <br>
+Nani mo nai kara <br>
+Anata to futari de<br><br>
+			</span></center></div>
+
+		<div class="daisy"><img src="daisy.jpg" type="button" class="mp3-art">
+			<span class="music-info">Daisy<br><span class="sdf">Stereo Dive Foundation</span></span>		
+			<audio controls preload="none" src="music/daisy.mp3" id="daisy"></audio><br><br>
+			<center><span class="lyrics"><b>LYRICS:</b><br>	
+Seijaku wo kirisaku you otozureta no wa <br>
+Hitsuzen to shite no kaikou bokura no tame ni <br>
+Koukai wo nageku me ni utsuru kimi wa sou <br>
+Urei wo matotte utsukushiku saita<br>
+<br>
+Dareka no seimei ni tokeru hana <br>
+Nee kimi ni mo mieru darou <br>
+Kitto<br>
+<br>
+Kasaneta ayamachi nurikaeru you <br>
+Nando demo ii sa kurikaeshite iku SUTAATO RAIN <br>
+Kako to wa chigau asu wo <br>
+Futari dake no kibou egaku SUTAATO RAIN <br>
+I never say good bye <br>
+Itsu datte sou sa<br>
+<br>
+Keizoku shite iku shoumei to shite no kesshou <br>
+Honoka ni yureru hi wo yadoshite <br>
+Kousai wo hanatsu mirai yakitsuketa kimi no me wa sukoshi kanashisou de <br>
+Take a look into my eyes <br>
+Saigo no hitoshizuku wo nugutte <br>
+Every time you wanna see call me <br>
+Saisho ni deatta ano basho de sa<br>
+<br>
+Chiriyuku unmei ni aragatte <br>
+Sou azayaka ni sakihokore <br>
+Always
+<br>
+Kimi no utau koe to tsunagaru you <br>
+Kokoro no oku narihibiita boku no ne <br>
+Inori ni ukabu asu wa <br>
+Ikiru imi wo kibou ni kaeru kara <br>
+I wanna be with you<br>
+<br>
+Nido to wa nai ima no genjitsu wo <br>
+Te ni ireru tame no gisei nante <br>
+Kesshite kodoku to ketsubetsu shikirenai <br>
+Ima no boku ni hakarenai <br>
+Sore demo ii nda <br>
+Hibikiwatare inori yo <br>
+Kodama suru bokura no utagoe <br>
+Issun no hikari wo egaita <br>
+Terashidasu ichirin no hana yo <br>
+Kimi to futari te wo tsunaide <br>
+Zutto itai nda<br>
+<br>
+Kasaneta ayamachi nurikaeru you <br>
+Nando demo ii sa kurikaeshite iku SUTAATO RAIN <br>
+Kako to wa chigau asu wo <br>
+Futari dake no kibou egaku SUTAATO RAIN <br>
+I never say good bye <br>
+Itsu datte sou sa <br>				
+<br>
+		</span></center></div>
+
+		<div class="departures"><img src="departures.jpg" type="button" class="mp3-art">
+			<span class="music-info">Departures<br><span class="EGOIST">EGOIST</span></span>		
+			<audio controls preload="none" src="music/departures.mp3" id="departures"></audio><br><br>
+			<center><span class="lyrics"><b>LYRICS:</b><br>	
+Mou anata kara aisareru koto mo <br>
+Hitsuyou to sareru koto mo nai <br>
+Soshite watashi wa koushite hitoribocchi de <br>
+Ano toki anata wa nante itta no? <br>
+Todokanai kotoba wa chuu wo mau <br>
+Wakatteru no ni kyou mo shite shimau <br>
+Kanawanu negaigoto wo<br>
+<br>
+Hanasanai de <br>
+Gyutto te wo nigitteite <br>
+Anata to futari  tsuzuku to itte <br>
+Tsunaida sono te wa atatakakute <br>
+Yasashikatta<br>
+<br>
+Anata wa itsumo sou yatte watashi wo <br>
+Okorasete saigo ni nakasunda <br>
+Dakedo ato ni natte <br>
+Gomen ne tte iu sono kao <br>
+Suki datta<br>
+<br>
+Hanasanai de <br>
+Gyutto  sou omoikkiri <br>
+Anata no ude no naka ni itai <br>
+Futari de odeko wo awase nagara <br>
+Nemuru no<br>
+<br>
+Mou nidoto wa aenai tte koto wo shitteta no?<br>
+<br>
+Hanasanai de <br>
+Gyutto  anata ga suki <br>
+Mou ichido datte waratte kurenai no <br>
+Anata no nukumori ga kiechau mae ni <br>
+Dakishimete<br><br>
+		</span></center></div>
+
+		<div class="everlasting-guilty-crown"><img src="everlasting-guilty-crown.jpg" type="button" class="mp3-art">
+			<span class="music-info">The Everlasting Guilty Crown<br><span class="EGOIST">EGOIST</span></span>		
+			<audio controls preload="none" src="music/everlasting-guilty-crown.mp3" id="everlasting-guilty-crown"></audio><br><br>
+			<center><span class="lyrics"><b>LYRICS:</b><br>	
+Sekai wa owari wo tsugeyou to shiteru <br>
+Dare ni mo mou tomerare wa shinai <br>
+---hajimaru <br>
+Houkai no SHINFONII ga narihibiite <br>
+Furu ame wa maru de namida no neiro<br>
+<br>
+Oshiete<br>
+<br>
+Shihai shi shihai sare hitotachi wa <br>
+Itsuka sono kokoro ni nikushimi wo <br>
+Soshite aisuru koto wo omoidasezu <br>
+Arasou no?<br>
+<br>
+Kono uta ga kikoeteru <br>
+Inochi aru subete no mono yo <br>
+Shinjitsu wa anata no mune no naka ni aru <br>
+Arashi no umi wo yuku toki mo <br>
+Keshite oku suru koto no nai tsuyosa wo <br>
+Kureru kara<br>
+<br>
+Keredo mo susumu hodo kaze wa tsuyoku <br>
+Kibou no hi wa yagate kiete yuku <br>
+"Akari wo yokose" to ubaiai <br>
+Hate ni hito wa koroshiau <br>
+Namida nado tou ni karete<br>
+<br>
+Kizuite<br>
+<br>
+Sono me wa tagai wo mitomeru tame <br>
+Sono koe wa omoi wo tsutaeru tame <br>
+Sono te wa daiji na hito to tsunagu tame ni aru<br>
+<br>
+Kono uta ga kikoeteru <br>
+Sekaijuu no yorube naki mono yo <br>
+Kibou wa anata no mune no naka ni aru <br>
+Moesakaru honoo no naka demo <br>
+Keshite kizutsuku koto no nai tsuyosa wo <br>
+Kureru kara<br>
+<br>
+Sono te de mamorou to shita mono wa <br>
+Aisuru mono datta no darou ka <br>
+Akaku somatta sono te wo nagamete <br>
+Yatto mizukara ga shite kita orokasa wo <br>
+Ayamachi to mitomeru sono tsumi wo <br>
+Tomedonaku afureru sono namida wo shiru<br>
+<br>
+Kono uta ga kikoeteru <br>
+Inochi aru subete no mono yo <br>
+Shinjitsu wa anata no mune no naka ni aru <br>
+Arashi no umi wa shizumatta <br>
+Ushinatta mono wa kazoekirenaku tomo<br>
+<br>
+Kono uta ga kikoeteru <br>
+Sekaijuu no yorube naki mono yo <br>
+Kibou wa anata no mune no naka ni aru <br>
+Kanashimi no yoru wo koeru toki <br>
+Kanarazu anata wa ikiteiku tsuyosa wo <br>
+Moteru kara	<br><br>		
+		</span></center></div>
+
+		<div class="mirror-heart"><img src="mirror-heart.jpg" type="button" class="mp3-art">
+			<span class="music-info">Selfish Mirror Heart<br><span class="db">Ayaka Ohashi</span></span>		
+			<audio controls preload="none" src="music/mirror-heart.mp3" id="mirror-heart"></audio><br><br>
+			<center><span class="lyrics"><b>LYRICS:</b><br>
+Wagamama MIRROR HEART  sakasama na hitomi o mite yo <br>
+<br>
+Nee, kirei na dake ja tsuyogarenai <br>
+Sou, bara ni mo toge ga tsuiteru desho? <br>
+"Kizutsuite mo ii yo" nante TAIPU demo nai <br>
+Butsukatte gomakashita yo PURE SIGN <br>
+<br>
+Dokoka  modokashiku tte <br>
+Nanika  afure sou de <br>
+PLEASE DON'T! PLEASE WAIT! <br>
+Sakebitai noni... <br>
+<br>
+Wagamama MIRROR HEART  sakasama ni junjou yurete <br>
+Kimi kara wa urahara ni utsuru no? <br>
+Soredemo MIRROR HEART  tate yori mo tsurugi na koudouron <br>
+GARASU zaiku yori sensai nano yo wakaru desho  kizuite yo <br>
+Dakara kyousei! <br>
+Watashi o marugoto mitsumete hoshii no <br>
+Zenbu yoyuu na furi de uketotte SHY BOY? <br>
+<br>
+STOP  sono line kara fumikomanaide <br>
+WHY  doushite RUURU mamorenai no? <br>
+Hatsudou shichau ijippari wa bouei honnou yo <br>
+Sou yatte gomakasu no wa WHAT IS THIS? <br>
+<br>
+Yamete nozokanaide <br>
+Nante iwasenaide <br>
+PLEASE DON'T! PLEASE WAIT! <br>
+Jiwari aseru no o... satoranaide yo <br>
+<br>
+Kataku na MIRROR GIRL  nanimo kamo hanten sasete <br>
+Shinjitsu mo urahara ni utsushitai <br>
+Ochame na MIRROR GIRL  kitai goto futte ageru kara <br>
+Sonna IIJII ni hodasarenai yo shitteru desho? <br>
+..sou iu koto yo <br>
+<br>
+Yowamushi MIRROR HEART <br>
+Itsudatte amanojaku <br>
+Sunao ni wa narenai... natte agenai <br>
+<br>
+Wagamama MIRROR HEART  sakasama ni junjou yurete <br>
+Kimi kara wa urahara ni utsuru no? <br>
+Soredemo MIRROR HEART  tate yori mo tsurugi na koudouron <br>
+GARASU zaiku yori sensai nano yo wakaru desho  kizuite yo <br>
+Dakara kyousei! <br>
+Watashi o marugoto mitsumete hoshii no <br>
+Watashi no dokoka o oitekanaide <br>
+Zenbu yoyuu na furi de waratte misete yo <br>
+Muchafuri uso honto  uketotte SHY BOY? <br>				
+<br>
+		</span></center></div>
+
+		<div class="my-dearest"><img src="my-dearest.jpg" type="button" class="mp3-art">
+			<span class="music-info">My Dearest (TV Edit)<br><span class="EGOIST">supercell</span></span>		
+			<audio controls preload="none" src="music/my-dearest.mp3" id="my-dearest"></audio><br><br>
+			<center><span class="lyrics"><b>LYRICS:</b><br>
+So, everything that makes me whole<br>
+Ima kimi ni sasageyou<br>
+I’m Yours<br>
+<br>
+Nee kono sekai ni wa takusan no<br>
+Shiawase ga aru’n da ne<br>
+Itsuka futari nara<br>
+<br>
+Dareka ga kimi no koto wo usotsuki to yonde<br>
+Kokoronai kotoba de kizutsukeyou toshite mo<br>
+Sekai ga kimi no koto wo shinjiyou to mo sezu ni<br>
+Ibara no kanmuri wo kabuseyou toshite mo<br>
+Watashi wa kimi dake no mikata ni nareru yo<br>
+Sono kodoku itami wo watashi wa shitte iru<br>
+So, everything that makes me whole<br>
+Ima kimi ni sasageyou	<br><br>
+		</span></center></div>
+
+		<div class="namae-no-nai-kaibutsu"><img src="namae-no-nai-kaibutsu.jpg" type="button" class="mp3-art">
+			<span class="music-info">Namae no Nai Kaibutsu<br><span class="EGOIST">EGOIST</span></span>		
+			<audio controls preload="none" src="music/namae-no-nai-kaibutsu.mp3" id="namae-no-nai-kaibutsu"></audio><br><br>
+			<center><span class="lyrics"><b>LYRICS:</b><br>
+FEARIITEIRU wa <br>
+Sakki shinda mitai <br>
+Renga no byoutou de umaku utaenakute <br>
+Kiri ni kemuru yoru ukabe akai tsuki <br>
+Horamite watashi wo <br>
+Me wo sorasanai de<br>
+<br>
+Kuroi tetsu goushi no naka de <br>
+Watashi wa umaretekitanda  <br>
+Akui no daishou wo negae <br>
+Nozomu ga mama ni omae ni <br>
+Saa ataeyou seigi wo <br>
+Kowashite kowasareru mae ni <br>
+Inga no daishou wo harai <br>
+Tomo ni yukou namae no nai kaibutsu<br>
+<br>
+Miminari ga shiteru <br>
+Tetsujoumou urusakutte <br>
+Omoi dasenai no ano hi no senritsu <br>
+Ame wa mada yamanai <br>
+Nanni mo mienai no <br>
+Horamite konna ni ookiku natta no<br>
+<br>
+Kuroi ame furase kono sora <br>
+Watashi wa nozomarenai mono <br>
+Hibi wareta NOIROOZE <br>
+Ai su douzai no boukansha tachi ni <br>
+Saa ima furue seigi wo <br>
+Kesenai kizu wo dakishimete <br>
+Kono karada wo uke ire  <br>
+Tomo ni yukou namae no nai kaibutsu<br>
+<br>
+Aa <br>
+Kami WA tsuGERU shin NO sekai WO<br>
+<br>
+Kuroi tetsu goushi no naka de <br>
+Watashi wa umaretekitanda <br>
+Akui no daishou wo negae <br>
+Nozomu ga mama ni omae ni <br>
+Saa ataeyou seigi wo <br>
+Kowashite kowasareru mae ni <br>
+Inga no daishou wo harai <br>
+Mukui yo na mo naki kaibutsu<br>
+<br>
+Kuroi ame furase kono sora <br>
+Watashi wa nozomarenai mono <br>
+Hibi wareta NOIROOZE <br>
+Ai su douzai no boukansha tachi ni <br>
+Saa ima furue seigi wo <br>
+Kesenai kizu wo dakishimete <br>
+Kono karada wo uke ire <br>
+Tomo ni yukou namae no nai kaibutsu	<br><br>
+		</span></center></div>
+
+		<div class="nande"><img src="nande.jpg" type="button" class="mp3-art">
+			<span class="music-info">Nande? Nande? Nande<br><span class="ak">Ai Kayano</span></span>		
+			<audio controls preload="none" src="music/nande.mp3" id="nande"></audio><br><br>
+			<center><span class="lyrics"><b>LYRICS:</b><br>
+Nande nande<br>
+<br>
+Saikin okashii wa<br>
+Anata no mae de<br>
+HAATO mo karada mo<br>
+Zenbu OOTOMEESHON<br>
+Hasayake wa<br>
+Hoho wo terasu no<br>
+<br>
+Nande nande<br>
+Shikou kairo ga SHOOTO nande<br>
+Fukyou wa onna TOOKU nande<br>
+Shikai furyouna GURAFIIKU<br>
+Nande nande<br>
+Kimochi fuwari fuwari nande<br>
+Tedori ashidori onegai<br>
+Koi wo oshiete<br>
+<br>
+Nande nande<br>
+Kyou mo hitobanjuu<br>
+Keiken nai kankaku<br>
+Yume wo mitai no<br>
+Onaji sekai de<br>
+Onaji basho　<br>
+Anata no soba de　<br>
+<br>
+Nande nande<br>
+Ohanashi shitetai wa nande<br>
+Shigami tsuitetai wa nande<br>
+Kotae wa doko ni aru no<br>
+Nande nande<br>
+Onaka suite kitawa nande<br>
+Tedori ashidori onegai<br>
+Koi wo oshiete<br>
+<br>
+Nande....<br>
+<br>
+SANDEE<br>
+MANDEE<br>
+CHUUZUDEE<br>
+UENZUDEE<br>
+SAAZUDEE<br>
+FURAIDEE<br>
+SATADEE<br>
+Zutto anata de ippai<br>
+<br>
+Issho ni itara, dame?<br>
+<br>
+Nande nande<br>
+Shikou kairo ga shouto nande<br>
+Fukyou wa onna TOOKU nande<br>
+Shikai furyouna GURAFIIKU<br>
+Nande nande<br>
+Kimochi fuwari fuwari nande<br>
+Tedori ashidori onegai<br>
+Koi wo oshiete<br>
+<br>
+Koi wo oshiete<br><br>			
+		</span></center></div>
+
+		<div class="spice"><img src="spice.jpg" type="button" class="mp3-art">
+			<span class="music-info">Spice<br><span class="tk">Tokyo Karonkoron</span></span>		
+			<audio controls preload="none" src="music/spice.mp3" id="spice"></audio><br><br>
+			<center><span class="lyrics"><b>LYRICS:</b><br>
+Akiramechatte ii no ni <br>
+Yamechae tte omou no ni <br>
+Nigedasu koto sae dekinakute <br>
+Fura fura, fura fura <br>
+<br>
+Jishin ga nakute sono sei de <br>
+Jibun jishin mo dasenakute <br>
+Jishin nakushite SUPAIRARU <br>
+Guru guru, guru guru <br>
+<br>
+Demo deaeta kara <br>
+Mou miushinawanai yo <br>
+<br>
+Egao ga areba, <br>
+<br>
+Iranai nani mo <br>
+Gouka na shina mo <br>
+Hade na kazari mo, <br>
+iranai kara <br>
+<br>
+Shokutaku kakomou <br>
+Kinou no MISU mo <br>
+Fuan na asu mo <br>
+Soete <br>
+<br>
+Nee, iranai nani mo <br>
+Kotta ajitsuke mo <br>
+Shareta moritsuke mo, <br>
+iranai kara <br>
+<br>
+Namida no aji wa mou <br>
+Shoppai to shite mo <br>
+Saigo ni itsumo <br>
+<br>
+Waraetara <br>
+Sore ga SUPAISU <br>
+<br>
+Kimochi ga tsuite ikanakute <br>
+Tachidomatte shimau no ni <br>
+Ashita wa matte kurenakute <br>
+Hara hara, hara hara <br>
+<br>
+Itai kurai te awasete <br>
+Furueru te gutto osaete <br>
+Doki doki, mune no hayasa de <br>
+Don don, susumetara ii na <br>
+<br>
+Omoikiri naite <br>
+Omoikiri waraou <br>
+<br>
+Issho ni ireba <br>
+<br>
+Iranai nani mo <br>
+Uso no egao mo <br>
+Tsuyogari nara mou, <br>
+iranai kara <br>
+<br>
+Chiisaku tatamou <br>
+Yowasa mo guchi mo <br>
+Tana no oku ni demo, oite <br>
+<br>
+Nee, iranai nani mo <br>
+Sono kaorizuke mo <br>
+Muri na irozuke mo, <br>
+iranai kara <br>
+<br>
+Sozai no mama ja mou <br>
+Tarinai to shite mo <br>
+Kazarazu itsumo <br>
+<br>
+Waraetara <br>
+<br>
+Donna hitogomi demo <br>
+Hitori datta kedo <br>
+Ima wa hitori dato shite mo, <br>
+kodoku nanka ja nai <br>
+<br>
+Egao ga areba, <br>
+<br>
+Iranai nani mo <br>
+Gouka na shina mo <br>
+Hade na kazari mo, iranai kara <br>
+<br>
+Shokutaku kakomou <br>
+Kinou no MISU mo <br>
+Fuan na asu mo <br>
+Soete <br>
+<br>
+Nee, iranai nani mo <br>
+Kotta ajitsuke mo <br>
+Shareta moritsuke mo, <br>
+iranai kara <br>
+<br>
+Namida no aji wa mou <br>
+Shoppai to shite mo <br>
+Saigo ni itsumo <br>
+<br>
+Waraetara, <br>
+waraetara, <br>
+taisetsu na hito to <br>
+Waraetara, <br>
+nani yori mo, <br>
+<br>
+Sore ga SUPAISU<br><br>			
+		</span></center></div>
+
+		<div class="your-reality"><img src="your-reality.jpg" type="button" class="mp3-art">
+			<span class="music-info">Your Reality<br><span class="ds">Dan Salvato</span></span>		
+			<audio controls preload="none" src="music/your-reality.mp3" id="your-reality"></audio><br><br>
+			<center><span class="lyrics"><b>LYRICS:</b><br>
+Every day, I imagine a future where I can be with you<br>
+In my hand is a pen that will write a poem of me and you<br>
+The ink flows down into the dark puddle<br>
+Just move your hand - write the way into his heart!<br>
+But in this world of infinite choices<br>
+What will it take just to find that special day?<br>
+What will it take just to find that special day?<br>
+<br>
+Have I found everybody a fun assignment to do today?<br>
+When you're here, everything that we do is fun for them anyway<br>
+When I can't even read my own feelings<br>
+What good are words when a smile says it all?<br>
+And if this world won't write me an ending<br>
+What will it take just for me to have it all?<br>
+<br>
+Does my pen only write bitter words for those who are dear to me?<br>
+Is it love if I take you, or is it love if I set you free?<br>
+The ink flows down into the dark puddle<br>
+How can I write love into reality?<br>
+If I can't hear the sound of your heartbeat<br>
+What do you call love in your reality?<br>
+And in your reality, if I don't know how to love you<br>
+I'll leave you be<br><br>
+		</span></center></div>
+
+		<div class="zen-zen-zense"><img src="zen-zen-zense.jpg" type="button" class="mp3-art">
+			<span class="music-info">Zen Zen Zense<br><span class="rad">RADWIMPS</span></span>		
+			<audio controls preload="none" src="music/zen-zen-zense.mp3" id="zen-zen-zense"></audio><br><br>
+			<center><span class="lyrics"><b>LYRICS:</b><br>
+Yatto me wo samashita kai  sore na no ni naze me mo awase ya shinai'n dai? <br>
+"Osoi yo" to okoru kimi  koredemo yareru dake tobashite kitanda yo<br>
+<br>
+Kokoro ga karada wo oikoshite kitanda yo<br>
+<br>
+Kimi no kami ya hitomi dake de mune ga itai yo <br>
+Onaji toki wo suikonde hanashitakunai yo <br>
+Haruka mukashi kara shiru  sono koe ni <br>
+Umarete hajimete  nani wo ieba ii?<br>
+<br>
+Kimi no zen zen zense kara boku wa  kimi wo sagashi hajimeta yo <br>
+Sono bukiccho na waraikata wo megakete  yatte kitanda yo<br>
+<br>
+Kimi ga zenzen zenbu naku natte  chirijiri ni nattatte <br>
+Mou mayowanai  mata ichi kara sagashi hajimeru sa <br>
+Mushiro zero kara  mata uchuu wo hajimete miyou ka<br>
+<br>
+Dokkara hanasu kana  kimi ga nemutteita aida no SUTOORII <br>
+Nan'oku  nankounenbun no monogatari wo katari ni kitanda yo  kedo iza sono sugata kono me ni utsusu to<br>
+<br>
+Kimi mo shiranu kimi to jarete  tawamuretai yo <br>
+Kimi no kienu itami made aishite mitai yo <br>
+Ginga nankobun ka no  hate ni deaeta <br>
+Sono te wo kowasazu ni  dou nigitta nara ii?<br>
+<br>
+Kimi no zen zen zense kara boku wa  kimi wo sagashi hajimeta yo <br>
+Sono sawagashii koe to namida wo megake  yatte kitanda yo<br>
+<br>
+Sonna kakumei zenya no bokura wo dare ga tomeru to iu'n darou <br>
+Mou mayowanai  kimi no HAATO ni hata wo tateru yo <br>
+Kimi wa boku kara akiramekata wo  ubaitotta no<br>
+<br>
+Zen zen zense kara boku wa  kimi wo sagashi hajimeta yo <br>
+Sono bukiccho na waraikata wo megakete  yatte kitanda yo<br>
+<br>
+Kimi ga zenzen zenbu naku natte  chirijiri ni nattatte <br>
+Mou mayowanai  mata ichi kara sagashi hajimeru sa <br>
+Nankounen demo  kono uta wo kuchizusami nagara<br>
+<br><br>
+	</span></center></div>
+		<!-- BREAKR	-->	
+			<div style="visibility: hidden">
+			<h2 style="text-align: center;">Use this button to jump back to the warper!</h2>
+			<span class="shome-button" type="button" onclick="jumpWarper()">Jump to Warper</span>
+			</div>
+		<!-- BREAKR	-->
+</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</div>
+
+<div id="popupnyar" class="hide">
+	<span class="mute-info" >The background music is automatically muted when you scroll here.</span> 
+</div>
+
+	
+<div id="tester" class="null"></div>
+<script>
+document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
+</script>
+<script>
+	document.addEventListener('play', function(e){
+	var audios = document.getElementsByTagName('audio')
+    var videos = document.getElementsByTagName('video');
+    for(var i = 0, len = videos.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
+</script>
+<script>
+	var me = document.getElementById("bgmusic-kun")
+	var p = document.getElementById("tester").classList
+	function musicPlay() {
+		me.play();
+		p.remove("null2");
+		p.add("null");
+	}
+	function musicPause() {
+		me.pause();
+		p.remove("null");
+		p.add("null2");
+	}
+	function jumpAnime() {
+		window.scrollTo(0, 838);
+	}
+	function jumpWarper() {
+		window.scrollTo(0, 250);
+	}
+	function jumpPictures() {
+		window.scrollTo(0, 9908);
+	}
+	function jumpMusic() {
+		window.scrollTo(0,17700);
+	}
+// 405px = gap between the musicJump and the bgmusic muter
+</script>
+<script>
+	var s = document.getElementById("shelterr").classList
+	var a = document.getElementById("eychteeemell").classList
+	var h = document.getElementById("he-mann").classList
+	var d = document.getElementById("ddelcee").classList
+	var b = document.getElementById("bgmusic-kun")
+	var p = document.getElementById("tester").classList
+	var z = document.getElementById("devid")
+	var x = document.getElementById("hevid")
+	var cew = document.getElementById("shevid")
+	var m = document.getElementById("tester").classList
+	function jumpShelter() {
+		b.pause()
+		s.remove("hide")
+		s.add("visible") 
+		a.add("html-fix")
+		m.add("null2")
+	}
+	function jumpDoki() {
+		b.pause()
+		d.remove("hide");
+		d.add("visible")
+		a.add("html-fix")
+		m.add("null2")
+	}
+	function jumpHeyea() {
+		b.pause()
+		h.remove("hide")
+		h.add("visible")
+		a.add("html-fix")
+		m.add("null2")
+	}
+	function jumpHome() {
+		z.pause()
+		x.pause()
+		cew.pause()
+		a.remove("html-fix")
+		s.remove("visible")
+		s.add("hide")
+		h.remove("visible")
+		h.add("hide")
+		d.remove("visible")
+		d.add("hide")
+		if(p.contains("null")) {
+			b.play()
+		} else {
+			b.pause()
+		}
+	}
+</script>
+<script>
+	var audio = document.getElementById("bgmusic-kun");
+	var c = document.getElementById("popupnyar").classList;
+	var e =document.getElementById("returner").classList
+	function roawr() {
+	if(window.pageYOffset > 830) {
+		e.remove("hide")
+		e.add("visible")
+		} else {
+			e.remove("visible")
+			e.add("hide")
+		}
+		if(window.pageYOffset > 17275) {
+    c.remove("hide");
+    c.add("show");
+	audio.pause();
+	} else if(p.contains("null")) {
+		audio.play()
+		c.remove("show");
+		c.add("hide");
+	} else {
+		audio.pause();
+		c.remove("show");
+		c.add("hide");
+	}
+	} 
+	window.onscroll = roawr
+</script>
+</html>
